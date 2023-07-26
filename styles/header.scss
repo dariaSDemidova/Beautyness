@@ -1,5 +1,7 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+$mainColor: #FFFFFF;
+$mainFont: 'Playfair Display', serif;
+$secondFont: 'Manrope', sans-serif;
+
+.header_logo {
+    font-family: $mainFont;
 }
