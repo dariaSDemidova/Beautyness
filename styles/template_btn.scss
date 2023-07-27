@@ -1,0 +1,40 @@
+/* Переменные для кнопок */
+$btnMainFont: 'Manrope', sans-serif;
+$btnTextLight: #FFF;
+$btnTextDark: #141414;
+
+
+@mixin btn ($btnColor, $padd...) {
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 125%;
+letter-spacing: 1.68px;
+background-color: $btnColor;
+padding: $padd;
+font-family: $btnMainFont;
+cursor: pointer;
+}
+
+/* Cтили для прозрачной кнопки */
+.btn_transparent_uppercase{
+    @include btn(transparent, 23px 36px 24px 36px);
+    color: $btnTextDark;
+    text-transform: uppercase;
+    border: 2px solid #5C8692;  
+}
+
+/* Cтили для зеленой кнопки */
+.btn_green_uppercase {
+    @include btn(#5C8692, 18px 43px 19px 43px);
+    color: $btnTextLight;
+    text-transform: uppercase;
+}
+
+/* Cтили для зеленой кнопки №2*/
+.btn_green-secondary_uppercase {
+    @include btn(#7A9CA5, 16px 33px);
+    color: $btnTextLight;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
