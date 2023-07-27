@@ -17,7 +17,7 @@ body {
     color: #FFF;
     text-align: center;
 
-    background-image: url('/img/header_content_pic.svg');
+    background-image: url('/img/bg/header_content_pic.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }
