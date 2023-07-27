@@ -1,7 +1,21 @@
-$mainColor: #FFFFFF;
 $mainFont: 'Playfair Display', serif;
-$secondFont: 'Manrope', sans-serif;
+$btnMainFont: 'Manrope', sans-serif;
+$btnTextLight: #FFFFFF;
+$btnTextDark: #141414;
+$btnColor: #7A9CA5;
 
-.header_logo {
-    font-family: $mainFont;
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 38px 60px 38px 60px;
+    height: 50px;
+    width: auto;
 }
+
+.container_logo {}
+
+.navigation {}
+
+.container_smlinks {}
+
+.btn btn_green-secondary_uppercase {}
