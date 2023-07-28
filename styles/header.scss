@@ -33,6 +33,28 @@ $btnColor: #7A9CA5;
     flex-direction: row;
     align-items: center;
     gap: 46px;
+
+
+    .header_logo {
+        color: $btnTextDark;
+        font-family: $secondaryFont;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+        /* 35px */
+    }
+
+    .header_call {
+        color: $btnTextDark;
+        font-family: $mainFont;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        /* 22.5px */
+        letter-spacing: -0.18px;
+    }
 }
 
 .navigation {
