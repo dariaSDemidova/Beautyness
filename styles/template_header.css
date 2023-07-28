@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* переменная для цвета текста */
 * {
   box-sizing: border-box;
 }
@@ -19,7 +18,7 @@ body {
   background-color: #1E2C30;
   color: #FFF;
   text-align: center;
-  background-image: url("/img/bg/header_content_pic.svg");
+  /* background-image: url('/img/bg/header_content_pic.svg'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -46,7 +45,6 @@ body {
 .header__content-big-text {
   font-family: "Playfair Display", serif;
   font-size: 55px;
-  font-style: normal;
   font-weight: 700;
   line-height: 120%;
   letter-spacing: -0.55px;
