@@ -1,3 +1,9 @@
+@import '_variables';
+@import '_mixins';
+
+$MainTextColor: #FFF;
+/* переменная для цвета текста */
+
 * {
     box-sizing: border-box;
 }
@@ -8,13 +14,14 @@ body {
     padding: 0;
 }
 
+/* стили для всех области, которая содержит контейнер с контентом */
 .header__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
     background-color: #1E2C30;
-    color: #FFF;
+    color: $MainTextColor;
     text-align: center;
 
     background-image: url('/img/bg/header_content_pic.svg');
@@ -22,6 +29,7 @@ body {
     background-size: cover;
 }
 
+/* стили контейнера, в котором содержатся кнопка и два блока с текстом */
 .header__content .container {
     display: flex;
     flex-direction: column;
@@ -30,8 +38,9 @@ body {
 }
 
 
+/* стили для небольшого текста */
 .header__content-small-text {
-    font-family: Manrope;
+    font-family: $mainFont;
     font-size: 15px;
     font-weight: 600;
     line-height: 154.5%;
@@ -39,8 +48,9 @@ body {
     text-transform: uppercase;
 }
 
+/* стили для большого текста */
 .header__content-big-text {
-    font-family: Playfair Display;
+    font-family: $secondaryFont;
     font-size: 55px;
     font-style: normal;
     font-weight: 700;
@@ -48,21 +58,12 @@ body {
     letter-spacing: -0.55px;
 }
 
-.header__content-button {
-    display: flex;
-    padding: 23px 36px 24px 36px;
-    margin-top: 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background: #5C8692;
-    cursor: pointer;
 
-    color: #FFF;
-    font-family: Manrope;
-    font-size: 14px;
-    font-weight: 800;
-    line-height: 125%;
-    letter-spacing: 1.68px;
+//Cтили для зеленой кнопки
+.btn_green_uppercase {
+    @include btn(#5C8692, 23px 36px 24px 36px);
+    color: $btnTextLight;
     text-transform: uppercase;
+    margin-top: 32px;
+    font-weight: 800;
 }
