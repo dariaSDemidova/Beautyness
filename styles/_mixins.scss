@@ -16,3 +16,12 @@
     font-family: $btnMainFont;
     cursor: pointer;
 }
+
+//миксин для текста
+@mixin text-styles ($font-family, $font-size, $font-weight, $line-height, $letter-spacing) {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}

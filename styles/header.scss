@@ -1,22 +1,128 @@
 $mainFont: 'Manrope', sans-serif;
-$secondFont: 'Playfair Display', serif;
+$secondaryFont: 'Playfair Display', serif;
+$fontColor: #555;
 $btnMainFont: 'Manrope', sans-serif;
 $btnTextLight: #FFFFFF;
 $btnTextDark: #141414;
 $btnColor: #7A9CA5;
+
+@mixin btn ($btnColor, $padd...) {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 1.4px;
+    background-color: $btnColor;
+    padding: $padd;
+    font-family: $btnMainFont;
+    cursor: pointer;
+}
 
 .header {
     display: flex;
     flex-direction: row;
     padding: 38px 60px 38px 60px;
     height: 50px;
-    width: auto;
+    width: 1920px;
+    justify-content: space-between;
+    gap: 485px
 }
 
-.container_logo {}
+.container_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 46px;
 
-.navigation {}
 
-.container_smlinks {}
+    .header_logo {
+        color: $btnTextDark;
+        font-family: $secondaryFont;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+        /* 35px */
+    }
 
-.btn btn_green-secondary_uppercase {}
+    .header_call {
+        color: $btnTextDark;
+        font-family: $mainFont;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 125%;
+        /* 22.5px */
+        letter-spacing: -0.18px;
+    }
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+
+        #dropdown_menu_btn {
+            background-color: $btnTextLight;
+        }
+    }
+
+    .dropdown_list {
+        display: none;
+        background-color: $btnColor;
+        min-width: 100px;
+        list-style: none;
+    }
+
+    .dropdown_list a {
+        display: block;
+        color: $btnTextLight;
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown_list {
+        display: block;
+        position: absolute;
+    }
+}
+
+.menu_link {
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: $fontColor;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 22.5px */
+
+}
+
+.container_smlinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn_green-secondary_uppercase {
+    @include btn(#7A9CA5, 16px 33px);
+    color: $btnTextLight;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: 50px;
+    width: 199px;
+}

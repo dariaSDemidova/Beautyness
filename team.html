@@ -1,23 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team</title>
 
-    <link rel = 'stylesheet' href = 'styles/normalize.css'>
+    <link rel='stylesheet' href='styles/normalize.css'>
+    <link rel="stylesheet" href="styles/team.css">
+    <link rel="stylesheet" href="styles/template_header.css">
 
-    <!--font-family: 'Manrope', sans-serif;-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- добавляем шрифты -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
 
-    <!--font-family: 'Playfair Display', serif;-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <header class="header">
+        <!-- хедер: темный блок -->
+        <div class="header__content">
+            <div class="container">
+                <div class="header__content-small-text">THE BEAUTY TEAM</div>
+                <div class="header__content-big-text">Beautyness Experts</div>
+            </div>
+        </div>
+    </header>
+    <!-- основной контент -->
+    <main class="team-main">
+        <div class="container"> <!-- контейнер для всего контента в main -->
+            <div class="team-main block-title">
+                <div class="block-title__h2">Meet our Experts</div> <!-- верхний заголовок -->
+                <div class="block-title__h1">The amazing women behind <br> Beautyness</div> <!-- нижний заголовок -->
+            </div>
+            <div class="team-main__card card"> <!-- контейнер для карточки -->
+                <img src="img/team_pic1.svg" alt="expert photo" class="card-image"> <!-- фото карточки -->
+                <div class="card-info"> <!-- текстовое содержимое карточки -->
+                    <div class="card-info__name">Sherlin D’Cruz</div>
+                    <!-- имя девушки -->
+                    <div class="card-info__position">Beautyness Expert</div><!-- позиция девушки -->
+                    <div class="card-info__description">I must explain to you how all this mistaken idea of denouncing
+                        pleasure that will araise praising pain</div> <!-- информация о девушке -->
+                    <div class="carf-info__icons"> <!-- иконки социальных сетей -->
+                        <a href="#">
+                            <img src="img/icons/FB_icon.svg" alt="facebook" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/TW_icon.svg" alt="twitter" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/IN_icon.svg" alt="linkedin" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-main__card card">
+                <img src="img/team_pic2.svg" alt="expert photo" class="card-image">
+                <div class="card-info">
+                    <div class="card-info__name">Maria Sharapova</div>
+                    <div class="card-info__position">Beautyness Expert</div>
+                    <div class="card-info__description">I must explain to you how all this mistaken idea of denouncing
+                        pleasure that will araise praising pain</div>
+                    <div class="carf-info__icons">
+                        <a href="#">
+                            <img src="img/icons/FB_icon.svg" alt="facebook" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/TW_icon.svg" alt="twitter" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/IN_icon.svg" alt="linkedin" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-main__card card">
+                <img src="img/team_pic3.svg" alt="expert photo" class="card-image">
+                <div class="card-info">
+                    <div class="card-info__name">Angeline Jenifer</div>
+                    <div class="card-info__position">Beautyness Expert</div>
+                    <div class="card-info__description">I must explain to you how all this mistaken idea of denouncing
+                        pleasure that will araise praising pain</div>
+                    <div class="carf-info__icons">
+                        <a href="#">
+                            <img src="img/icons/FB_icon.svg" alt="facebook" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/TW_icon.svg" alt="twitter" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/IN_icon.svg" alt="linkedin" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-main__card card">
+                <img src="img/team_pic4.svg" alt="expert photo" class="card-image">
+                <div class="card-info">
+                    <div class="card-info__name">Bonham Carter</div>
+                    <div class="card-info__position">Beautyness Expert</div>
+                    <div class="card-info__description">I must explain to you how all this mistaken idea of denouncing
+                        pleasure that will araise praising pain</div>
+                    <div class="carf-info__icons">
+                        <a href="#">
+                            <img src="img/icons/FB_icon.svg" alt="facebook" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/TW_icon.svg" alt="twitter" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/IN_icon.svg" alt="linkedin" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-main__card card">
+                <img src="img/team_pic5.svg" alt="expert photo" class="card-image">
+                <div class="card-info">
+                    <div class="card-info__name">Evanna Lynch</div>
+                    <div class="card-info__position">Beautyness Expert</div>
+                    <div class="card-info__description">I must explain to you how all this mistaken idea of denouncing
+                        pleasure that will araise praising pain</div>
+                    <div class="carf-info__icons">
+                        <a href="#">
+                            <img src="img/icons/FB_icon.svg" alt="facebook" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/TW_icon.svg" alt="twitter" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/IN_icon.svg" alt="linkedin" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-main__card card">
+                <img src="img/team_pic6.svg" alt="expert photo" class="card-image">
+                <div class="card-info">
+                    <div class="card-info__name">Natalia Tena</div>
+                    <div class="card-info__position">Beautyness Expert</div>
+                    <div class="card-info__description">I must explain to you how all this mistaken idea of denouncing
+                        pleasure that will araise praising pain</div>
+                    <div class="carf-info__icons">
+                        <a href="#">
+                            <img src="img/icons/FB_icon.svg" alt="facebook" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/TW_icon.svg" alt="twitter" class="icon">
+                        </a>
+                        <a href="#">
+                            <img src="img/icons/IN_icon.svg" alt="linkedin" class="icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
 </body>
+
 </html>
