@@ -1,5 +1,90 @@
+@import '_variables';
+@import '_mixins';
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.footer {
+    max-height: 635px;
+    max-width: 1920px;
+    background-color: #1E2C30;
+    color: #FFFFFF;
+    padding: 66px 360px;
+}
+
+.footer__container {
+    max-width: 1200px;
+}
+
+
+.container__logo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 52px;
+}
+
+.footer__logo {
+    @include text-styles ($secondaryFont, 40px, 700, 50px, 2%);
+}
+
+hr {
+    max-width: 1200px;
+    border-width: 1px;
+}
+
+.container__menu {
+    display: flex;
+    gap: 129px;
+    padding-top: 52px;
+    max-width: 1200px;
+}
+
+.explore,
+.utility {
+    display: flex;
+    flex-direction: column;
+}
+
+.explore__title,
+.utility__title,
+.shedule__title,
+.contacts__title {
+    @include text-styles ($secondaryFont, 22px, 700, 30.8px);
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30.8px;
+}
+
+.footer a {
+    @include text-styles ($mainFont, 17px, 500, 34px, -1%);
+    text-decoration: none;
+}
+
+.contacts__subtitle {
+    @include text-styles ($mainFont, 17px, 700, 25.5px, -1%);
+}
+
+.contacts__data {
+    @include text-styles ($mainFont, 17px, 500, 25.5px, -1%);
+}
+
+.shedule {
+    @include text-styles ($mainFont, 17px, 500, 34px, -1%);
+}
+
+.contacts__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 29px;
+}
+
+.copyright {
+    max-height: 75px;
+    text-align: center;
+    background-color: #111E22;
+    @include text-styles ($mainFont, 15px, 400, 30px, -1%);
 }
