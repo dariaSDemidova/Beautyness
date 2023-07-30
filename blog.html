@@ -8,6 +8,8 @@
 
     <link rel='stylesheet' href='styles/normalize.css'>
     <link rel="stylesheet" href="styles/blog.css">
+    <link rel="stylesheet" href="styles/footer.css"> <!-- стили для футера -->
+    <link rel="stylesheet" href="styles/template_header.css">
 
     <!-- добавляем шрифты -->
     <link
@@ -17,7 +19,15 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+        <!-- хедер: темный блок -->
+        <div class="header__content">
+            <div class="container">
+                <div class="header__content-small-text">GET IN TOUCH WITH US</div>
+                <div class="header__content-big-text">Articles & News</div>
+            </div>
+        </div>
+    </header>
     <!-- основной контент -->
     <main class="blog-main">
         <div class="container"> <!-- контейнер основного контента -->
@@ -128,7 +138,6 @@
             <button class="btn_transparent_uppercase">VIEW MORE STORIES</button>
         </div>
     </main>
-    <footer></footer>
 </body>
 
 </html>
