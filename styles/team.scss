@@ -11,7 +11,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 33px 45px;
-    width: 100%;
     margin: 0px auto;
     max-width: 1920px;
     padding: 100px;
@@ -79,5 +78,19 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: none;
+    }
+}
+
+@media (min-width:416px) and (max-width: 992px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 100px 10px 100px 10px;
+    }
+
+    .team-main .block-title {
+        display: grid;
+        grid-column: 1/3;
     }
 }
