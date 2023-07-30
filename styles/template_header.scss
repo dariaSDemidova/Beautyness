@@ -46,6 +46,7 @@ body {
 /* стили для большого текста */
 .header__content-big-text {
     @include text-styles ($secondaryFont, 55px, 700, 120%, -0.55px);
+    padding-top: 8px;
 }
 
 
