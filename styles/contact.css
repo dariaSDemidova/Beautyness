@@ -6,6 +6,36 @@
   box-sizing: border-box;
 }
 
+.сontact-card .contact-card__info .contact-card__h3 {
+  color: #5C8692;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.5%;
+  letter-spacing: 1.5px;
+}
+
+.сontact-card .contact-card__info .contact-card__h1 {
+  color: #141414;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.45px;
+}
+
+.сontact-card .contact-card__info .contact-card__text {
+  color: #555;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+  padding-top: 1%;
+}
+
 html,
 body {
   margin: 0;
@@ -55,8 +85,65 @@ body {
 }
 
 .contact-main {
+  display: flex;
   margin: 0 auto;
   padding-left: 360px;
   padding-right: 360px;
   border: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.сontact-card {
+  display: flex;
+  flex-direction: row;
+  padding-top: 138px;
+  padding-bottom: 118px;
+  gap: 120px;
+}
+.сontact-card #main_photo {
+  float: left;
+  height: auto;
+  padding-left: -50px;
+}
+.сontact-card .contact-card__info .contact-card__h3 {
+  text-transform: uppercase;
+  gap: 9px;
+}
+.сontact-card .contact-card__info .contact-card__h1 {
+  max-width: 435px;
+  gap: 23px;
+}
+.сontact-card .contact-card__info .contact-card__text {
+  gap: 43px;
+}
+.сontact-card .contact-card__contacts #icon {
+  width: 65px;
+  height: 65px;
+}
+.сontact-card .contact-card__contacts .contact-card__adress {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 27px;
+}
+.сontact-card .contact-card__contacts .contact_text {
+  color: #141414;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  /* 20px */
+  letter-spacing: 0.96px;
+  text-transform: uppercase;
+}
+.сontact-card .contact-card__contacts .contact_title {
+  color: #141414;
+  font-family: Playfair Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  /* 30px */
 }/*# sourceMappingURL=contact.css.map */
