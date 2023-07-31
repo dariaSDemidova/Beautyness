@@ -7,6 +7,9 @@
 @import "variables";
 @import "mixins";
 @import url(template_top-line.css);
+$textColor: #141414;
+$firstBackColor: #FFF;
+$seconBackColor: #EBF3F5;
 
 html,
 body {
@@ -51,82 +54,124 @@ body {
     padding-top: 8px;
 }
 
+/*основная часть - карточка с фото*/
 .contact-main {
     display: flex;
+    flex-direction: row;
     margin: 0 auto;
     padding-left: 360px;
     padding-right: 360px;
-    border: 1px solid black;
+    padding-top: 138px;
+    padding-bottom: 118px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: $firstBackColor;
 }
 
 .сontact-card {
     display: flex;
-    flex-direction: row;
-    padding-top: 138px;
-    padding-bottom: 118px;
+    align-items: center;
     gap: 120px;
 
     #main_photo {
         float: left;
         height: auto;
-        padding-left: -50px;
+        height: 611px;
     }
 
+    /*основной текст карточки*/
     .contact-card__info {
         .contact-card__h3 {
             @extend %title_sm-top;
             text-transform: uppercase;
-            gap: 9px;
+            padding-bottom: 9px;
         }
 
         .contact-card__h1 {
             @include title_h2 (435px);
-            gap: 23px;
+            padding-bottom: 23px;
         }
 
         .contact-card__text {
             @extend %title__sm-down;
-            gap: 43px;
+            padding-bottom: 43px;
         }
     }
 
+    /*иконки с контактами*/
     .contact-card__contacts {
-        #icon {
-            width: 65px;
-            height: 65px;
-        }
-
-        .contact-card__adress {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding-right: 27px;
-        }
-
         .contact_text {
-            color: #141414;
-            font-family: Manrope;
+            color: $textColor;
+            font-family: $mainFont;
             font-size: 16px;
             font-style: normal;
             font-weight: 600;
             line-height: 125%;
-            /* 20px */
             letter-spacing: 0.96px;
             text-transform: uppercase;
         }
 
         .contact_title {
-            color: #141414;
-            font-family: Playfair Display;
+            color: $textColor;
+            font-family: $secondaryFont;
             font-size: 24px;
             font-style: normal;
             font-weight: 700;
             line-height: 125%;
-            /* 30px */
+            gap: 30px;
         }
 
+        .icon {
+            height: 75px;
+            width: 75px;
+            padding: 0px 27px 0px 0px;
+        }
 
+        .contact-card__container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
     }
 }
+
+/*форма с опросником*/
+.container-appointment {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 1183px;
+    align-items: center;
+    background-color: $seconBackColor;
+
+    .container__form {
+        display: flex;
+        padding: 120px 455px 120px 455px;
+        flex-direction: column;
+        align-items: center;
+        gap: 65px;
+
+        .container__form__title {
+            max-width: 622px;
+            text-align: center;
+
+            .container__form__title__h3 {
+                @extend %title_sm-top;
+                text-transform: uppercase;
+            }
+
+            .container__form__title__h1 {
+                @include title_h2;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            .container__form__title__text {
+                @extend %title__sm-down;
+                padding-bottom: 65px;
+            }
+        }
+    }
+}
+
+/*футер*/
