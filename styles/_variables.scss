@@ -1,6 +1,7 @@
 //глобальные переменные
 $mainFont: 'Manrope', sans-serif;
 $secondaryFont: 'Playfair Display', serif;
+$navFontColor: #555;
 
 //переменные для кнопок
 $btnMainFont: 'Manrope', sans-serif;
@@ -25,7 +26,7 @@ $btnTextDark: #141414;
     font-size: 45px;
     font-style: normal;
     font-weight: 700;
-    line-height: 130%; 
+    line-height: 130%;
     letter-spacing: -0.45px;
 }
 
@@ -38,4 +39,3 @@ $btnTextDark: #141414;
     line-height: 165%;
     padding-top: 1%;
 }
-
