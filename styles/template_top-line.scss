@@ -29,9 +29,9 @@ $btnColor: #7A9CA5;
     flex-direction: row;
     padding: 38px 60px 38px 60px;
     height: 50px;
-    width: 1920px;
+    max-width: 1920px;
     justify-content: space-between;
-    gap: 485px
+
 }
 
 .container_logo {
