@@ -1,12 +1,14 @@
 @charset "UTF-8";
 @import url(template_top-line.css);
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.container-appointment .container__form .container__form__title .container__form__title__h3, .сontact-card .contact-card__info .contact-card__h3 {
+.container-appointment .container__form .container__form__title .container__form__title__h3,
+.сontact-card .contact-card__info .contact-card__h3 {
   color: #5C8692;
   font-family: "Manrope", sans-serif;
   font-size: 15px;
@@ -26,7 +28,8 @@
   letter-spacing: -0.45px;
 }
 
-.container-appointment .container__form .container__form__title .container__form__title__text, .сontact-card .contact-card__info .contact-card__text {
+.container-appointment .container__form .container__form__title .container__form__title__text,
+.сontact-card .contact-card__info .contact-card__text {
   color: #555;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -104,22 +107,27 @@ body {
   /*основной текст карточки*/
   /*иконки с контактами*/
 }
+
 .сontact-card #main_photo {
   float: left;
   height: auto;
   height: 611px;
 }
+
 .сontact-card .contact-card__info .contact-card__h3 {
   text-transform: uppercase;
   padding-bottom: 9px;
 }
+
 .сontact-card .contact-card__info .contact-card__h1 {
   max-width: 435px;
   padding-bottom: 23px;
 }
+
 .сontact-card .contact-card__info .contact-card__text {
   padding-bottom: 43px;
 }
+
 .сontact-card .contact-card__contacts .contact_text {
   color: #141414;
   font-family: Manrope;
@@ -130,6 +138,7 @@ body {
   letter-spacing: 0.96px;
   text-transform: uppercase;
 }
+
 .сontact-card .contact-card__contacts .contact_title {
   color: #141414;
   font-family: Playfair Display;
@@ -139,11 +148,13 @@ body {
   line-height: 125%;
   gap: 30px;
 }
+
 .сontact-card .contact-card__contacts .icon {
   height: 75px;
   width: 75px;
   padding: 0px 27px 0px 0px;
 }
+
 .сontact-card .contact-card__contacts .contact-card__container {
   display: flex;
   flex-direction: row;
@@ -159,6 +170,7 @@ body {
   align-items: center;
   background-color: #EBF3F5;
 }
+
 .container-appointment .container__form {
   display: flex;
   padding: 120px 455px 120px 455px;
@@ -166,13 +178,16 @@ body {
   align-items: center;
   gap: 65px;
 }
+
 .container-appointment .container__form .container__form__title {
   max-width: 622px;
   text-align: center;
 }
+
 .container-appointment .container__form .container__form__title .container__form__title__h3 {
   text-transform: uppercase;
 }
+
 .container-appointment .container__form .container__form__title .container__form__title__h1 {
   color: #141414;
   text-align: center;
@@ -185,6 +200,9 @@ body {
   text-align: center;
   padding-bottom: 20px;
 }
+
 .container-appointment .container__form .container__form__title .container__form__title__text {
   padding-bottom: 65px;
-}/*# sourceMappingURL=contact.css.map */
+}
+
+/*# sourceMappingURL=contact.css.map */

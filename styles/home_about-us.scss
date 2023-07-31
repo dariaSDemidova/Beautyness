@@ -1,0 +1,85 @@
+@import '_variables';
+@import '_mixins';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about {
+    background: #EBF3F5;
+}
+
+.about {
+    .container {
+        display: flex;
+        margin: 0px auto;
+        max-width: 1200px;
+        padding: 150px 0;
+        gap: 125px;
+    }
+}
+
+.about .left-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 27px
+}
+
+.left-container__text-h2 {
+    @extend %title_sm-top;
+    text-transform: uppercase;
+}
+
+.left-container__text-h1 {
+    @extend %title_h2;
+    padding-top: 9px;
+}
+
+.left-container__text-description {
+    @include text-styles ($mainFont, 18px, 400, 165%, 0);
+    color: #555;
+    padding-top: 16px;
+}
+
+
+.left-container__cards {
+    display: flex;
+    gap: 10px;
+    padding-top: 35px;
+}
+
+.left-container__cards .card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1E2C30;
+    background: #FFF;
+}
+
+.card__icon {}
+
+.card .card_text {
+    display: flex;
+    text-align: center;
+    @include text-styles ($secondaryFont, 22px, 700, 120%, 0);
+}
+
+.about .right-container {
+    position: relative;
+}
+
+.right-container__girl {
+    position: absolute;
+    top: 45px;
+    right: 38px;
+}
+
+.card__icon {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    object-fit: contain;
+}
