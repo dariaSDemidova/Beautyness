@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-$navFontColor: #555;
-@import url(_variables.scss);
-@import url(_mixins.scss);
+@import "variables";
+@import "mixins";
+
 
 .header {
     display: flex;
