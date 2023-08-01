@@ -8,6 +8,7 @@
   padding: 23px 36px 24px 36px;
   font-family: "Manrope", sans-serif;
   cursor: pointer;
+  border: none;
   color: #141414;
   text-transform: uppercase;
   border: 2px solid #5C8692;
@@ -23,6 +24,7 @@
   padding: 18px 43px 19px 43px;
   font-family: "Manrope", sans-serif;
   cursor: pointer;
+  border: none;
   color: #FFF;
   text-transform: uppercase;
 }
@@ -37,6 +39,7 @@
   padding: 16px 33px;
   font-family: "Manrope", sans-serif;
   cursor: pointer;
+  border: none;
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 1.4px;
