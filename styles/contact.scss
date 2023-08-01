@@ -139,17 +139,19 @@ body {
 .container-appointment {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 1920px;
     max-height: 1183px;
     align-items: center;
+    padding: 120px 455px;
     background-color: $seconBackColor;
 
     .container__form {
         display: flex;
-        padding: 120px 455px 120px 455px;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        gap: 65px;
+        flex-direction: column;
+        max-width: 1010px;
+        max-height: 943px;
 
         .container__form__title {
             max-width: 622px;
@@ -174,4 +176,144 @@ body {
     }
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    gap: 15px;
+    padding: 98px 100px;
+    box-shadow: 0px 34px 50px 0px #442E1A12;
+}
+
+input {
+    border: none;
+    border: 1px solid #5C8692;
+    width: 810px;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-position: 15px;
+}
+
+.appointment__name {
+    background-image: url("/img/icons/appointment-icon1.svg");
+}
+
+.appointment__mail {
+    background-image: url('/img/icons/appointment-icon2.svg');
+}
+
+.appointment__phone {
+    background-image: url('/img/icons/appointment-icon3.svg');
+}
+
+.appointment__service {
+    background-image: url('/img/icons/appointment-icon4.svg');
+}
+
+.appointment__note {
+    background-image: url('/img/icons/appointment-icon5.svg');
+    height: 123px;
+}
+
+input {
+    @include text-styles ($mainFont, 19px, 400, 30.4px, -1%);
+    color: #141414;
+    padding-left: 54px;
+}
+
+.btn_green-secondary_uppercase {
+    @include btn(#7A9CA5, 23px 307px);
+    color: $btnTextLight;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 65px;
+    width: 810px;
+}
+
+
 /*футер*/
+.footer {
+    max-height: 635px;
+    max-width: 1920px;
+    background-color: #1E2C30;
+    color: #FFFFFF;
+    padding: 66px 360px;
+}
+
+.footer__container {
+    max-width: 1200px;
+}
+
+
+.container__logo {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 52px;
+}
+
+.footer__logo {
+    @include text-styles ($secondaryFont, 40px, 700, 50px, 2%);
+}
+
+hr {
+    max-width: 1200px;
+    border-width: 1px;
+}
+
+.container__menu {
+    display: flex;
+    gap: 129px;
+    padding-top: 52px;
+    max-width: 1200px;
+}
+
+.explore,
+.utility {
+    display: flex;
+    flex-direction: column;
+}
+
+.explore__title,
+.utility__title,
+.shedule__title,
+.contacts__title {
+    @include text-styles ($secondaryFont, 22px, 700, 30.8px);
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30.8px;
+}
+
+.footer a {
+    @include text-styles ($mainFont, 17px, 500, 34px, -1%);
+    text-decoration: none;
+}
+
+.contacts__subtitle {
+    @include text-styles ($mainFont, 17px, 700, 25.5px, -1%);
+}
+
+.contacts__data {
+    @include text-styles ($mainFont, 17px, 500, 25.5px, -1%);
+}
+
+.shedule {
+    @include text-styles ($mainFont, 17px, 500, 34px, -1%);
+}
+
+.contacts__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 29px;
+}
+
+.copyright {
+    max-height: 75px;
+    text-align: center;
+    background-color: #111E22;
+    @include text-styles ($mainFont, 15px, 400, 30px, -1%);
+}
