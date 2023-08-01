@@ -12,7 +12,6 @@ body {
     max-width: 1920px;
     max-height: 1183px;
     padding: 120px 455px;
-
 }
 
 .appointment {
@@ -31,19 +30,17 @@ body {
 }
 
 .appointment__title {
-    @include text-styles ($secondaryFont, 45px, 700, 58.5px, -1%);
-    color: #141414;
+    @extend %title_h2;
     text-align: center;
 }
 
 .appointment__text {
-    @include text-styles ($mainFont, 18px, 400, 31.5px, 0);
-    color: #555555;
+    @extend %title__sm-down;
     text-align: center;
     padding-top: 20px;
 }
 
-.container {
+.appointment__container {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
