@@ -24,7 +24,7 @@ body {
 }
 
 /* стили контейнера, в котором содержатся кнопка и два блока с текстом */
-.header__content .container {
+.template-header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
