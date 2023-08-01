@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 118px;
+  margin: 118px;
 }
 
 /* стили для небольшого текста */
