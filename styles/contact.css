@@ -137,11 +137,12 @@
   padding-bottom: 65px;
 }
 
-.container {
+.container_input {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding: 98px 100px;
+  background-color: #FFF;
   box-shadow: 0px 34px 50px 0px rgba(68, 46, 26, 0.0705882353);
 }
 
@@ -195,6 +196,7 @@ input {
   padding: 23px 307px;
   font-family: "Manrope", sans-serif;
   cursor: pointer;
+  border: none;
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: 1.4px;
@@ -204,6 +206,7 @@ input {
   gap: 10px;
   height: 65px;
   width: 810px;
+  border: none;
 }
 
 /*футер*//*# sourceMappingURL=contact.css.map */
