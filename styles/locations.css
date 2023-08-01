@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-.сontact-card .contact-card__info .contact-card__h3 {
+.contact-card__info .contact-card__h3 {
   color: #5C8692;
   font-family: "Manrope", sans-serif;
   font-size: 15px;
@@ -18,7 +18,7 @@
   letter-spacing: 1.5px;
 }
 
-.сontact-card .contact-card__info .contact-card__h1 {
+.contact-card__info .contact-card__h1 {
   color: #141414;
   font-family: "Playfair Display", serif;
   font-size: 45px;
@@ -45,15 +45,22 @@
   display: flex;
   align-items: center;
   gap: 129px;
-  /*основной текст карточки*/
-  /*иконки с контактами*/
 }
-.сontact-card #main_photo {
+
+#main_photo {
   float: left;
   width: 646px;
   height: 681px;
 }
-.сontact-card .contact-card__info {
+
+#main_photo_exclude {
+  float: right;
+  width: 646px;
+  height: 681px;
+}
+
+/*основной текст карточки*/
+.contact-card__info {
   display: flex;
   width: 425px;
   flex-direction: column;
@@ -61,14 +68,16 @@
   gap: 50px;
   flex-shrink: 0;
 }
-.сontact-card .contact-card__info .contact-card__h3 {
+.contact-card__info .contact-card__h3 {
   text-transform: uppercase;
   padding-bottom: 9px;
 }
-.сontact-card .contact-card__info .contact-card__h1 {
+.contact-card__info .contact-card__h1 {
   max-width: 435px;
 }
-.сontact-card .contact-card__contacts .contact_text {
+
+/*иконки с контактами*/
+.contact-card__contacts .contact_text {
   color: #141414;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -78,7 +87,7 @@
   letter-spacing: 0.96px;
   text-transform: uppercase;
 }
-.сontact-card .contact-card__contacts .contact_title {
+.contact-card__contacts .contact_title {
   color: #141414;
   font-family: "Playfair Display", serif;
   font-size: 24px;
@@ -87,12 +96,12 @@
   line-height: 125%;
   gap: 25px;
 }
-.сontact-card .contact-card__contacts .icon {
+.contact-card__contacts .icon {
   height: 75px;
   width: 75px;
   padding: 0px 27px 0px 0px;
 }
-.сontact-card .contact-card__contacts .contact-card__container {
+.contact-card__contacts .contact-card__container {
   display: flex;
   flex-direction: row;
   align-items: center;
