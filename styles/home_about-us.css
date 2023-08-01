@@ -71,6 +71,12 @@
   flex-direction: column;
   border: 1px solid #1E2C30;
   background: #FFF;
+  width: 165px;
+  padding: 17px 33px 19px 33px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 .card .card_text {
