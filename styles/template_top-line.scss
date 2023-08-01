@@ -7,16 +7,6 @@
 @import "variables";
 @import "mixins";
 
-.header {
-    display: flex;
-    flex-direction: row;
-    padding: 38px 60px 38px 60px;
-    height: 50px;
-    margin: 0px auto;
-    max-width: 1920px;
-    justify-content: space-between;
-}
-
 @media (max-width:1920px) {
     .body {
         max-width: 1500px;
@@ -33,6 +23,17 @@
     .body {
         max-width: 1200px;
     }
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 38px 60px 38px 60px;
+    height: 50px;
+    margin: 0px auto;
+    max-width: 1920px;
+    justify-content: space-between;
+    gap: 120px;
 }
 
 .container_logo {
@@ -78,7 +79,7 @@
 
     .dropdown_list {
         display: none;
-        background-color: $btnColor;
+        background-color: #7A9CA5;
         min-width: 100px;
         list-style: none;
     }
