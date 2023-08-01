@@ -7,7 +7,6 @@
 @import "variables";
 @import "mixins";
 
-
 .header {
     display: flex;
     flex-direction: row;
@@ -16,7 +15,24 @@
     margin: 0px auto;
     max-width: 1920px;
     justify-content: space-between;
+}
 
+@media (max-width:1920px) {
+    .body {
+        max-width: 1500px;
+    }
+}
+
+@media (max-width:1560px) {
+    .body {
+        max-width: 1400px;
+    }
+}
+
+@media (max-width:1440px) {
+    .body {
+        max-width: 1200px;
+    }
 }
 
 .container_logo {
@@ -25,7 +41,6 @@
     align-items: center;
     gap: 46px;
 
-
     .header_logo {
         color: $btnTextDark;
         font-family: $secondaryFont;
@@ -33,7 +48,6 @@
         font-style: normal;
         font-weight: 700;
         line-height: 125%;
-        /* 35px */
     }
 
     .header_call {
@@ -43,7 +57,6 @@
         font-style: normal;
         font-weight: 600;
         line-height: 125%;
-        /* 22.5px */
         letter-spacing: -0.18px;
     }
 }
