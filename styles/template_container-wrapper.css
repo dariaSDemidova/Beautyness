@@ -4,10 +4,10 @@
   padding-right: 360px;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .container-wrapper {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
 }
 
@@ -18,9 +18,9 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (max-width: 480px) {
   .container-wrapper {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
