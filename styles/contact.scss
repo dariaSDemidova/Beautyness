@@ -7,11 +7,12 @@
 @import "variables";
 @import "mixins";
 @import url(template_top-line.css);
-@import url(footer.css);
 @import url(template_header.css);
+@import url(footer.css);
 $textColor: #141414;
 $firstBackColor: #FFF;
 $seconBackColor: #EBF3F5;
+
 
 /*основная часть - карточка с фото*/
 .contact-main {
@@ -25,16 +26,67 @@ $seconBackColor: #EBF3F5;
     align-items: center;
     justify-content: space-around;
     background-color: $firstBackColor;
+
+    @media (min-width: 992px) and (max-width: 1449px) {
+        padding-left: 220px;
+        padding-right: 220px;
+        padding-top: 128px;
+        padding-bottom: 108px;
+        align-items: center;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding-left: 115px;
+        padding-right: 150px;
+        padding-top: 100px;
+        padding-bottom: 90px;
+        align-items: center;
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+
+        }
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        align-items: center;
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-direction: column;
+
+            #main_photo {
+                float: inline-start;
+                height: 450px;
+            }
+
+            .contact-card__info {
+                display: flex;
+                flex-direction: column;
+                padding-left: 70px;
+                padding-right: 70px;
+            }
+        }
+    }
 }
 
-.сontact-card {
+.contact-card {
     display: flex;
     align-items: center;
     gap: 120px;
 
     #main_photo {
         float: left;
-        height: auto;
         height: 611px;
     }
 

@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @import url(template_top-line.css);
-@import url(footer.css);
 @import url(template_header.css);
+@import url(footer.css);
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.container-appointment .container__form .container__form__title .container__form__title__h3, .сontact-card .contact-card__info .contact-card__h3 {
+.container-appointment .container__form .container__form__title .container__form__title__h3, .contact-card .contact-card__info .contact-card__h3 {
   color: #5C8692;
   font-family: "Manrope", sans-serif;
   font-size: 15px;
@@ -18,7 +18,7 @@
   letter-spacing: 1.5px;
 }
 
-.container-appointment .container__form .container__form__title .container__form__title__h1, .сontact-card .contact-card__info .contact-card__h1 {
+.container-appointment .container__form .container__form__title .container__form__title__h1, .contact-card .contact-card__info .contact-card__h1 {
   color: #141414;
   font-family: "Playfair Display", serif;
   font-size: 45px;
@@ -28,7 +28,7 @@
   letter-spacing: -0.45px;
 }
 
-.container-appointment .container__form .container__form__title .container__form__title__text, .сontact-card .contact-card__info .contact-card__text {
+.container-appointment .container__form .container__form__title .container__form__title__text, .contact-card .contact-card__info .contact-card__text {
   color: #555;
   font-family: "Manrope", sans-serif;
   font-size: 18px;
@@ -51,31 +51,80 @@
   justify-content: space-around;
   background-color: #FFF;
 }
+@media (min-width: 992px) and (max-width: 1449px) {
+  .contact-main {
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-top: 128px;
+    padding-bottom: 108px;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-main {
+    padding-left: 115px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    align-items: center;
+  }
+  .contact-main .contact-card {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .contact-main {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    align-items: center;
+  }
+  .contact-main .contact-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .contact-main .contact-card #main_photo {
+    float: inline-start;
+    height: 450px;
+  }
+  .contact-main .contact-card .contact-card__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
 
-.сontact-card {
+.contact-card {
   display: flex;
   align-items: center;
   gap: 120px;
   /*основной текст карточки*/
   /*иконки с контактами*/
 }
-.сontact-card #main_photo {
+.contact-card #main_photo {
   float: left;
-  height: auto;
   height: 611px;
 }
-.сontact-card .contact-card__info .contact-card__h3 {
+.contact-card .contact-card__info .contact-card__h3 {
   text-transform: uppercase;
   padding-bottom: 9px;
 }
-.сontact-card .contact-card__info .contact-card__h1 {
+.contact-card .contact-card__info .contact-card__h1 {
   max-width: 435px;
   padding-bottom: 23px;
 }
-.сontact-card .contact-card__info .contact-card__text {
+.contact-card .contact-card__info .contact-card__text {
   padding-bottom: 43px;
 }
-.сontact-card .contact-card__contacts .contact_text {
+.contact-card .contact-card__contacts .contact_text {
   color: #141414;
   font-family: "Manrope", sans-serif;
   font-size: 16px;
@@ -85,7 +134,7 @@
   letter-spacing: 0.96px;
   text-transform: uppercase;
 }
-.сontact-card .contact-card__contacts .contact_title {
+.contact-card .contact-card__contacts .contact_title {
   color: #141414;
   font-family: "Playfair Display", serif;
   font-size: 24px;
@@ -94,12 +143,12 @@
   line-height: 125%;
   gap: 30px;
 }
-.сontact-card .contact-card__contacts .icon {
+.contact-card .contact-card__contacts .icon {
   height: 75px;
   width: 75px;
   padding: 0px 27px 0px 0px;
 }
-.сontact-card .contact-card__contacts .contact-card__container {
+.contact-card .contact-card__contacts .contact-card__container {
   display: flex;
   flex-direction: row;
   align-items: center;
