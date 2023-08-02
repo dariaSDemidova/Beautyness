@@ -18,11 +18,162 @@ $firstBackColor: #FFF;
     flex-direction: column;
     margin: 0 auto;
     padding: 120px 360px;
-    width: 1200px;
+    max-width: 1920px;
     gap: 120px;
     align-items: center;
     justify-content: space-around;
     background-color: $firstBackColor;
+
+    @media (min-width: 992px) and (max-width: 1449px) {
+        padding-left: 220px;
+        padding-right: 220px;
+        padding-top: 128px;
+        padding-bottom: 108px;
+        align-items: center;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding-left: 115px;
+        padding-right: 150px;
+        padding-top: 100px;
+        padding-bottom: 90px;
+        align-items: center;
+
+        .сontact-card {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+
+            #main_photo {
+                float: left;
+                height: 300px;
+                width: auto;
+            }
+
+            #main_photo_exclude {
+                float: right;
+                height: 300px;
+                width: auto;
+            }
+
+            .contact-card__info {
+                display: flex;
+                width: auto;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                flex-shrink: 0;
+
+                .contact-card__h3 {
+                    color: #5C8692;
+                    font-family: $mainFont;
+                    font-size: 8px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 154.5%;
+                    letter-spacing: 1.5px;
+                }
+
+                .contact-card__h1 {
+                    color: #141414;
+                    font-family: $secondaryFont;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 130%;
+                    letter-spacing: -0.45px;
+                }
+            }
+
+            /*иконки с контактами*/
+            .contact-card__contacts {
+
+                .contact_text {
+                    color: $textColor;
+                    font-family: $mainFont;
+                    font-size: 8px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 125%;
+                    letter-spacing: 0.96px;
+                    text-transform: uppercase;
+                }
+
+                .contact_title {
+                    color: $textColor;
+                    font-family: $secondaryFont;
+                    font-size: 10px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 125%;
+                    gap: 5px;
+                }
+
+                .icon {
+                    height: 55px;
+                    width: 55px;
+                    padding: 0px 15px 0px 0px;
+                }
+
+                .contact-card__container {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+
+            .btn_green-secondary_uppercase {
+                @include btn(#7A9CA5, 13px 26px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $btnTextLight;
+                text-align: center;
+                font-family: $mainFont;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 125%;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                gap: 5px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 40px 80px;
+        align-items: center;
+
+        .сontact-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            #main_photo {
+                float: inline-start;
+                height: 450px;
+                width: auto;
+            }
+
+            #main_photo_exclude {
+                float: inline-end;
+                height: 450px;
+                width: auto;
+            }
+
+            .contact-card__info {
+                display: flex;
+                flex-direction: column;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
 }
 
 .сontact-card {
