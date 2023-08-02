@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-body {
+.services {
     max-width: 1920px;
     max-height: 5599px;
 }
@@ -16,27 +16,67 @@ body {
     @extend %title_sm-top;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 146px;
 }
 
 .services__title {
     @extend %title_h2;
     text-align: center;
+    padding-top: 9px;
 }
 
-.services__container {
+.services__container1,
+.services__container2,
+.services__container3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.services__container1,
+.services__container2 {
     background-image: url('/img/services_background.jpg');
     background-position: center;
     background-repeat: no-repeat;
 }
 
-hr {
-    color: #9BB7BF;
+
+.services__container1 {
+    padding-top: 50px;
+}
+
+.services__container3 {
+    background-image: url('/img/services_background2.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 131px;
+}
+
+.service__name {
+    @include text-styles ($secondaryFont, 22px, 400, 28.6px, 5%);
+    color: #141414;
+
+}
+
+.service__price,
+.service__text {
+    @include text-styles ($mainFont, 18px, 400, 29.7px, 2%);
+    color: #555555;
 }
 
 
-.services__button {
+
+.service-container {
+    display: flex;
+}
+
+hr {
+    color: #9BB7BF;
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+
+
+.service__button {
     @include btn(#FFFFFF, 23px 34px);
     color: $btnTextDark;
     text-transform: uppercase;
@@ -44,11 +84,11 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     height: 65px;
     width: 249px;
     border: 2px solid;
     border-color: #5C8692;
+    margin-top: 35px;
 }
 
 .discount {
@@ -62,29 +102,33 @@ hr {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 37px;
 }
 
 .discount__subtitle {
     @extend %title_sm-top;
     text-align: center;
     text-transform: uppercase;
+    padding-top: 131px;
 }
 
 .discount__title {
     @extend %title_h2;
     text-align: center;
+    padding-top: 9px;
 }
 
 .discount__text {
     @extend %title__sm-down;
     text-align: center;
+    padding-top: 14px;
 }
 
 .discount__main {
     display: flex;
     justify-content: center;
     border: 1px solid #95BFCB;
+    margin-top: 37px;
+    margin-bottom: 131px;
 }
 
 .offer {
