@@ -51,7 +51,7 @@
   justify-content: space-around;
   background-color: #FFF;
 }
-@media (min-width: 992px) and (max-width: 1449px) {
+@media screen and (min-width: 992px) and (max-width: 1449px) {
   .contact-main {
     padding-left: 220px;
     padding-right: 220px;
@@ -60,7 +60,7 @@
     align-items: center;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .contact-main {
     padding-left: 115px;
     padding-right: 150px;
@@ -74,7 +74,7 @@
     gap: 100px;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .contact-main {
     display: flex;
     flex-direction: column;
@@ -92,13 +92,14 @@
   }
   .contact-main .contact-card #main_photo {
     float: inline-start;
-    height: 450px;
+    max-height: 300px;
   }
   .contact-main .contact-card .contact-card__info {
     display: flex;
     flex-direction: column;
-    padding-left: 70px;
-    padding-right: 70px;
+    max-width: 80%;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -164,6 +165,16 @@
   padding: 120px 455px;
   background-color: #EBF3F5;
 }
+@media screen and (max-width: 480px) {
+  .container-appointment {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    max-height: auto;
+    align-items: center;
+    padding: 50px 100px;
+  }
+}
 .container-appointment .container__form {
   display: flex;
   justify-content: center;
@@ -185,8 +196,7 @@
 .container-appointment .container__form .container__form__title .container__form__title__text {
   padding-bottom: 65px;
 }
-
-.container_input {
+.container-appointment .container_input {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -194,8 +204,7 @@
   background-color: #FFF;
   box-shadow: 0px 34px 50px 0px rgba(68, 46, 26, 0.0705882353);
 }
-
-input {
+.container-appointment input {
   border: none;
   border: 1px solid #5C8692;
   width: 810px;
@@ -203,29 +212,23 @@ input {
   background-repeat: no-repeat;
   background-position: 15px;
 }
-
-.appointment__name {
+.container-appointment .appointment__name {
   background-image: url("/img/icons/appointment-icon1.svg");
 }
-
-.appointment__mail {
+.container-appointment .appointment__mail {
   background-image: url("/img/icons/appointment-icon2.svg");
 }
-
-.appointment__phone {
+.container-appointment .appointment__phone {
   background-image: url("/img/icons/appointment-icon3.svg");
 }
-
-.appointment__service {
+.container-appointment .appointment__service {
   background-image: url("/img/icons/appointment-icon4.svg");
 }
-
-.appointment__note {
+.container-appointment .appointment__note {
   background-image: url("/img/icons/appointment-icon5.svg");
   height: 123px;
 }
-
-input {
+.container-appointment input {
   font-family: "Manrope", sans-serif;
   font-size: 19px;
   font-weight: 400;
@@ -234,8 +237,7 @@ input {
   color: #141414;
   padding-left: 54px;
 }
-
-.btn_green-secondary_uppercase {
+.container-appointment .btn_green-secondary_uppercase {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -256,6 +258,4 @@ input {
   height: 65px;
   width: 810px;
   border: none;
-}
-
-/*футер*//*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */
