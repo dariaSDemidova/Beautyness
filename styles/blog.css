@@ -14,6 +14,10 @@
   padding: 150px 100px 120px 100px;
 }
 
+.blog-main .container > a {
+  text-decoration: none;
+}
+
 .blog-main__card.card {
   display: flex;
   flex-direction: column;
