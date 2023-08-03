@@ -36,7 +36,16 @@
 
 .services {
   max-width: 1920px;
-  max-height: 5599px;
+}
+@media (max-width: 480px) {
+  .services {
+    max-width: 480px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .services {
+    max-width: 991px;
+  }
 }
 
 .services__subtitle {
@@ -56,12 +65,33 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media (max-width: 480px) {
+  .services__container1,
+  .services__container2,
+  .services__container3 {
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .services__container1,
+  .services__container2,
+  .services__container3 {
+    margin: 20px;
+  }
+}
 
 .services__container1,
 .services__container2 {
   background-image: url("/img/services_background.jpg");
   background-position: center;
   background-repeat: no-repeat;
+}
+@media (max-width: 480px) {
+  .services__container1,
+  .services__container2 {
+    background-image: none;
+  }
 }
 
 .services__container1 {
@@ -73,6 +103,22 @@
   background-repeat: no-repeat;
   background-position: bottom;
   margin-bottom: 131px;
+}
+@media (max-width: 480px) {
+  .services__container3 {
+    background-image: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .services__img {
+    max-width: 350px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .services__img {
+    max-width: 380px;
+  }
 }
 
 .service__name {
@@ -126,6 +172,11 @@ hr {
   border: 2px solid;
   border-color: #5C8692;
   margin-top: 35px;
+}
+@media (max-width: 480px) {
+  .service__button {
+    margin-bottom: 20px;
+  }
 }
 
 .discount {
