@@ -19,6 +19,10 @@
   justify-content: center;
 }
 
+.team-main__container > a {
+  text-decoration: none;
+}
+
 .block-title__h2 {
   color: #5C8692;
   text-align: center;
