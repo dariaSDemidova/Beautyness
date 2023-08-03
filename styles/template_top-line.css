@@ -14,7 +14,7 @@
   justify-content: space-between;
   gap: 120px;
 }
-@media (min-width: 992px) and (max-width: 1449px) {
+@media screen and (min-width: 992px) and (max-width: 1449px) {
   .header {
     display: flex;
     flex-direction: row;
@@ -41,7 +41,7 @@
     width: 180px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   .header {
     display: flex;
     flex-direction: row;
@@ -82,49 +82,40 @@
     gap: 6px;
   }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .header {
     display: flex;
     flex-direction: row;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 15px 10px 15px;
     justify-content: space-between;
-    gap: 40px;
   }
   .header .container_logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-  }
-  .header .container_logo #header_icons {
-    width: 6px;
-    height: 6px;
+    display: none;
   }
   .header .container_logo .header_logo {
-    font-size: 9px;
+    font-size: 2vh;
   }
   .header .container_logo .header_call {
-    font-size: 6px;
-  }
-  .header .menu_link {
-    font-size: 6px;
-  }
-  .header .container_smlinks {
-    display: none;
+    font-size: 2vh;
   }
   .header .navigation {
     align-items: center;
-    gap: 10px;
+    padding-right: 10px;
+  }
+  .header .navigation .menu_link {
+    font-size: 2vh;
+    gap: 5px;
+  }
+  .header .navigation .container_smlinks {
+    display: none;
   }
   .header .navigation #header_icons {
-    width: 6px;
-    height: 6px;
+    display: none;
   }
   .header .btn_green-secondary_uppercase1 {
-    height: 6px;
-    width: 70px;
-    font-size: 6px;
-    gap: 4px;
+    height: 10px;
+    width: 85px;
+    font-size: 1.5vh;
   }
 }
 
@@ -193,7 +184,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  /* 22.5px */
 }
 
 .container_smlinks {
