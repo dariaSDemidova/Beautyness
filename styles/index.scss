@@ -15,6 +15,74 @@ body {
 }
 
 
+/* начало стилей второго блока с карточками (Саша) */
+.home-second-block__container {
+    display: flex;
+    padding: 144px 0px;
+    margin: 0px auto;
+    max-width: 1920px;
+    gap: 105px;
+}
+
+.home-second-block__text-block .text-block__h1 {
+    color: #141414;
+    @include text-styles ($secondaryFont, 26px, 700, 120%, 0);
+    padding-top: 26px;
+    ;
+}
+
+.home-second-block__text-block .text-block__h2 {
+    color: #555;
+    @include text-styles ($mainFont, 18px, 400, 165%, 0.36px);
+    padding-top: 11px;
+    padding-bottom: 30px
+}
+
+.btn_transparent_uppercase {
+    @include btn(transparent, 18px 43px 18px 43px);
+    color: $btnTextDark;
+    text-transform: uppercase;
+    border: 2px solid #5C8692;
+    grid-column: 2;
+    width: 250px;
+    height: 65px;
+    justify-self: center;
+}
+
+@media (max-width: 415px) {
+
+    .home-second-block__container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .home-second-block__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width:416px) and (max-width: 991px) {
+    .home-second-block__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 25px;
+    }
+
+    .home-second-block__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* конец стилей второго блока с карточками (Саша) */
+
+
 //Тут начинаются стили для контейнера с услугами и ценами (внесла Даша)
 
 .services {
