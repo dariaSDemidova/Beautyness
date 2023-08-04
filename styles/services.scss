@@ -41,6 +41,10 @@
     @media (max-width: 480px) {
         grid-template-columns: 1fr;
     }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .services__container1,
@@ -88,7 +92,7 @@
 
 .services__img {
     @media (max-width: 480px) {
-        max-width: 350px;
+        max-width: 300px;
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
@@ -170,12 +174,14 @@ hr {
     @extend %title_h2;
     text-align: center;
     padding-top: 9px;
+    max-width: 626px;
 }
 
 .discount__text {
     @extend %title__sm-down;
     text-align: center;
     padding-top: 14px;
+    max-width: 644px;
 }
 
 .discount__main {
