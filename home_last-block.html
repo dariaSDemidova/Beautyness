@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/blog.css">
     <link rel="stylesheet" href="styles/footer.css"> <!-- стили для футера -->
     <link rel="stylesheet" href="styles/team.css">
+    <link rel="stylesheet" href="styles/home_last-block.css">
 
     <!-- добавляем шрифты -->
     <link
@@ -20,68 +21,70 @@
 
 <body>
     <!-- основной контент -->
-    <main class="team-main">
-        <div class="team-main__container"> <!-- контейнер основного контента -->
-            <div class="team-main block-title">
-                <div class="block-title__h2">Our Blog</div> <!-- верхний заголовок -->
-                <div class="block-title__h1">Latest Updates</div> <!-- нижний заголовок -->
+    <div class="team-main">
+        <div class="container-wrapper">
+            <div class="team-main__container"> <!-- контейнер основного контента -->
+                <div class="team-main block-title">
+                    <div class="block-title__h2">Our Blog</div> <!-- верхний заголовок -->
+                    <div class="block-title__h1">Latest Updates</div> <!-- нижний заголовок -->
+                </div>
+
+                <a href="#">
+                    <div class="blog-main__card card"> <!-- контейнер для карточки -->
+                        <img src="img/blog_pic1.png" alt="pic1" class="card-image"> <!-- фото карточки -->
+                        <div class="card-info"> <!-- текстовое содержимое карточки -->
+                            <div class="card-author"> <!-- верхний блок с данными об авторе и времени -->
+                                <div class="card-author__date">11TH AUGUST 2021</div>
+                                <div class="card-author__delimiter"></div>
+                                <div class="card-author__name">BY PETER BERGSON</div>
+                            </div>
+                            <div class="card-title">The energy efficiency of the hydrotherapy or swim</div>
+                            <!-- заголовок карточки -->
+                            <div class="card-description">The point of using Lorem Ipsum hiter that using making it look
+                                like
+                                others readable will get end.</div> <!-- краткое описание карточки -->
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="blog-main__card card">
+                        <img src="img/blog_pic2.png" alt="pic1" class="card-image">
+                        <div class="card-info">
+                            <div class="card-author">
+                                <div class="card-author__date">11TH AUGUST 2021</div>
+                                <div class="card-author__delimiter"></div>
+                                <div class="card-author__name">BY PETER BERGSON</div>
+                            </div>
+                            <div class="card-title">Tips to improve your body via cleansing</div>
+                            <div class="card-description">The point of using Lorem Ipsum hiter that using making it look
+                                like
+                                others readable will get end.</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="blog-main__card card">
+                        <img src="img/blog_pic3.png" alt="pic1" class="card-image">
+                        <div class="card-info">
+                            <div class="card-author">
+                                <div class="card-author__date">11TH AUGUST 2021</div>
+                                <div class="card-author__delimiter"></div>
+                                <div class="card-author__name">BY PETER BERGSON</div>
+                            </div>
+                            <div class="card-title">Experience the beauty at our beauty spa</div>
+                            <div class="card-description">The point of using Lorem Ipsum hiter that using making it look
+                                like
+                                others readable will get end.</div>
+                        </div>
+                    </div>
+                </a>
+
+                <button class="btn_transparent_uppercase">VIEW MORE STORIES</button>
             </div>
-
-            <a href="#">
-                <div class="blog-main__card card"> <!-- контейнер для карточки -->
-                    <img src="img/blog_pic1.svg" alt="pic1" class="card-image"> <!-- фото карточки -->
-                    <div class="card-info"> <!-- текстовое содержимое карточки -->
-                        <div class="card-author"> <!-- верхний блок с данными об авторе и времени -->
-                            <div class="card-author__date">11TH AUGUST 2021</div>
-                            <div class="card-author__delimiter"></div>
-                            <div class="card-author__name">BY PETER BERGSON</div>
-                        </div>
-                        <div class="card-title">The energy efficiency of the hydrotherapy or swim</div>
-                        <!-- заголовок карточки -->
-                        <div class="card-description">The point of using Lorem Ipsum hiter that using making it look
-                            like
-                            others readable will get end.</div> <!-- краткое описание карточки -->
-                    </div>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="blog-main__card card">
-                    <img src="img/blog_pic2.svg" alt="pic1" class="card-image">
-                    <div class="card-info">
-                        <div class="card-author">
-                            <div class="card-author__date">11TH AUGUST 2021</div>
-                            <div class="card-author__delimiter"></div>
-                            <div class="card-author__name">BY PETER BERGSON</div>
-                        </div>
-                        <div class="card-title">Tips to improve your body via cleansing</div>
-                        <div class="card-description">The point of using Lorem Ipsum hiter that using making it look
-                            like
-                            others readable will get end.</div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#">
-                <div class="blog-main__card card">
-                    <img src="img/blog_pic3.svg" alt="pic1" class="card-image">
-                    <div class="card-info">
-                        <div class="card-author">
-                            <div class="card-author__date">11TH AUGUST 2021</div>
-                            <div class="card-author__delimiter"></div>
-                            <div class="card-author__name">BY PETER BERGSON</div>
-                        </div>
-                        <div class="card-title">Experience the beauty at our beauty spa</div>
-                        <div class="card-description">The point of using Lorem Ipsum hiter that using making it look
-                            like
-                            others readable will get end.</div>
-                    </div>
-                </div>
-            </a>
-
-            <button class="btn_transparent_uppercase">VIEW MORE STORIES</button>
         </div>
-    </main>
+    </div>
 </body>
 
 </html>
