@@ -154,6 +154,10 @@ hr {
     max-width: 1920px;
     max-height: 670px;
     background-color: #EBF3F5;
+
+    @media (max-width: 480px) {
+        max-height: 1000px;
+    }
 }
 
 .discount__container {
