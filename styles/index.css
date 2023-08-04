@@ -99,7 +99,7 @@ body {
 
 @media (max-width: 480px) {
   .services__img {
-    max-width: 350px;
+    max-width: 300px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
