@@ -15,9 +15,6 @@ body{
 }
 
 .header__top-line {
-    @media  (max-width: 480px) {
-        display: none;   
-    }
 
     @media  (min-width: 481px) and (max-width: 767px) {
         display: none;   
@@ -70,6 +67,9 @@ body{
         margin-bottom: 100px;    
     }
     @media  (min-width: 768px) and (max-width: 991px) {
+        min-width: auto;
+    }
+    @media  (min-width: 1449px) and (max-width: 1920px) {
         min-width: auto;
     }
 
@@ -271,6 +271,7 @@ body{
     .card {
         display: flex;
         flex-direction: column;
+        align-items: center;
         @media (max-width: 480px)  {
             min-width: 319px;
         }
@@ -280,8 +281,8 @@ body{
         @media  (min-width: 992px) and (max-width: 1449px) {
         
         }
-        @media  (min-width: 1449px) and (max-width: 1920px) {
-            
+        @media  (min-width: 1450px) and (max-width: 1920px) {
+            width: 350px;
             align-items: center;
             }
     }
@@ -299,11 +300,11 @@ body{
         object-fit: cover;
     }
     @media  (min-width: 992px) and (max-width: 1449px) {
-        width: 308px;
+        width: 312px;
         height: 100%;
         object-fit: cover;
     }
-    @media  (min-width: 1449px) and (max-width: 1920px) {
+    @media  (min-width: 1450px) and (max-width: 1920px) {
         width: 100%;
         height: 100%;
         object-fit: cover;
