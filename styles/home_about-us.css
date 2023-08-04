@@ -31,7 +31,7 @@
 .home-container {
   display: flex;
   max-width: 1200px;
-  padding: 150px 360px;
+  padding: 150px 0px;
   gap: 125px;
 }
 
@@ -131,5 +131,34 @@
   .home-container {
     margin: 0px auto;
     padding: 150px 10px;
+  }
+}
+.container-wrapper {
+  margin: 0 auto;
+  padding-left: 360px;
+  padding-right: 360px;
+}
+@media (min-width: 992px) and (max-width: 1449px) {
+  .container-wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-wrapper {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 480px) {
+  .container-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }/*# sourceMappingURL=home_about-us.css.map */
