@@ -9,7 +9,7 @@
 
 .home-second-block__container {
     display: flex;
-    padding: 144px 100px;
+    padding: 144px 0px;
     margin: 0px auto;
     max-width: 1920px;
     gap: 105px;
@@ -45,7 +45,6 @@
     .home-second-block__container {
         display: flex;
         flex-direction: column;
-        padding: 144px 40px;
         gap: 50px;
     }
 
@@ -62,7 +61,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 25px;
-        padding: 100px 25px;
     }
 
     .home-second-block__card {
@@ -74,8 +72,28 @@
 }
 
 
-@media (min-width: 1450px) {
-    .home-second-block__container {
-        padding: 144px 350px;
+.container-wrapper {
+    margin: 0 auto;
+    padding-left: 360px;
+    padding-right: 360px;
+
+    @media (min-width: 992px) and (max-width: 1449px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @media (max-width: 480px) {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
