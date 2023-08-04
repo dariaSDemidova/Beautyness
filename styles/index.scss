@@ -16,12 +16,17 @@ body {
 
 
 /* начало стилей второго блока с карточками (Саша) */
+
 .home-second-block__container {
     display: flex;
     padding: 144px 0px;
     margin: 0px auto;
     max-width: 1920px;
     gap: 105px;
+}
+
+.home-second-block_card-image {
+    max-width: 100%;
 }
 
 .home-second-block__text-block .text-block__h1 {
@@ -49,8 +54,7 @@ body {
     justify-self: center;
 }
 
-@media (max-width: 415px) {
-
+@media (max-width: 480px) {
     .home-second-block__container {
         display: flex;
         flex-direction: column;
@@ -65,7 +69,7 @@ body {
     }
 }
 
-@media (min-width:416px) and (max-width: 991px) {
+@media (min-width:481px) and (max-width: 991px) {
     .home-second-block__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
