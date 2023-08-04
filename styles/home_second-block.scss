@@ -9,7 +9,7 @@
 
 .home-second-block__container {
     display: flex;
-    padding: 144px 100px;
+    padding: 144px 0px;
     margin: 0px auto;
     max-width: 1920px;
     gap: 105px;
@@ -45,7 +45,6 @@
     .home-second-block__container {
         display: flex;
         flex-direction: column;
-        padding: 144px 40px;
         gap: 50px;
     }
 
@@ -62,7 +61,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 50px 25px;
-        padding: 100px 25px;
     }
 
     .home-second-block__card {
@@ -70,12 +68,5 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-}
-
-
-@media (min-width: 1450px) {
-    .home-second-block__container {
-        padding: 144px 350px;
     }
 }

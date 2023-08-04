@@ -31,7 +31,7 @@
 .home-container {
   display: flex;
   max-width: 1200px;
-  padding: 150px 360px;
+  padding: 150px 0px;
   gap: 125px;
 }
 
