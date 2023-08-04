@@ -60,7 +60,7 @@
         .btn_green-secondary_uppercase1 {
             height: 40px;
             width: 160px;
-            font-size: 2vh;
+            font-size: 14px;
         }
     }
 
@@ -207,9 +207,7 @@
         }
 
         .btn_green-secondary_uppercase1 {
-            height: 10px;
-            width: 85px;
-            font-size: 10px;
+            display: none;
         }
     }
 }

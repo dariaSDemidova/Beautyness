@@ -35,7 +35,7 @@ $seconBackColor: #EBF3F5;
         align-items: center;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 991px) {
+    @media screen and (min-width: 769px) and (max-width: 991px) {
         padding-left: 115px;
         padding-right: 150px;
         padding-top: 100px;
@@ -45,12 +45,74 @@ $seconBackColor: #EBF3F5;
         .contact-card {
             display: flex;
             align-items: center;
-            gap: 100px;
+            gap: 50px;
 
+            #main_photo {
+                float: left;
+                max-height: 550px;
+                padding-left: 100px;
+            }
+
+            .contact-card__info {
+                display: flex;
+                flex-direction: column;
+                max-width: 80%;
+                padding-left: 0px;
+                padding-right: 100px;
+            }
         }
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        align-items: center;
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-direction: column;
+
+            #main_photo {
+                float: inline-start;
+                max-height: 350px;
+            }
+
+            .contact-card__info {
+                display: flex;
+                flex-direction: column;
+                max-width: 80%;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+
+            .contact-card__contacts {
+                .contact_text {
+                    font-size: 1.5vh;
+                }
+
+                .contact_title {
+                    font-size: 3vh;
+                }
+
+                .icon {
+                    height: 65px;
+                    width: 65px;
+                    padding: 0px 20px 0px 0px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .contact-main {
         display: flex;
         flex-direction: column;
         padding-left: 80px;
@@ -77,9 +139,26 @@ $seconBackColor: #EBF3F5;
                 padding-left: 60px;
                 padding-right: 60px;
             }
+
+            .contact-card__contacts {
+                .contact_text {
+                    font-size: 1.5vh;
+                }
+
+                .contact_title {
+                    font-size: 3vh;
+                }
+
+                .icon {
+                    height: 65px;
+                    width: 65px;
+                    padding: 0px 20px 0px 0px;
+                }
+            }
         }
     }
 }
+
 
 .contact-card {
     display: flex;
@@ -166,6 +245,15 @@ $seconBackColor: #EBF3F5;
         padding: 50px 100px;
     }
 
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 768px;
+        max-height: auto;
+        align-items: center;
+        padding: 50px 100px;
+    }
+
     .container__form {
         display: flex;
         justify-content: center;
@@ -177,6 +265,16 @@ $seconBackColor: #EBF3F5;
         .container__form__title {
             max-width: 622px;
             text-align: center;
+
+            @media screen and (max-width: 480px) {
+                display: flex;
+                max-width: 250px;
+                text-align: center;
+                align-items: center;
+                flex-direction: column;
+                padding-top: 100px;
+
+            }
 
 
             .container__form__title__h3 {
@@ -204,55 +302,112 @@ $seconBackColor: #EBF3F5;
         padding: 98px 100px;
         background-color: $firstBackColor;
         box-shadow: 0px 34px 50px 0px #442E1A12;
-    }
 
-    input {
-        border: none;
-        border: 1px solid #5C8692;
-        width: 810px;
-        height: 65px;
-        background-repeat: no-repeat;
-        background-position: 15px;
-    }
+        @media screen and (max-width: 480px) {
+            display: flex;
+            flex-direction: column;
+            max-width: 380px;
+            gap: 10px;
+            padding: 20px 20px 20px 18px;
+        }
 
-    .appointment__name {
-        background-image: url("/img/icons/appointment-icon1.svg");
-    }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            max-width: 680px;
+            gap: 10px;
+        }
 
-    .appointment__mail {
-        background-image: url('/img/icons/appointment-icon2.svg');
-    }
+        input {
+            border: none;
+            border: 1px solid #5C8692;
+            width: 810px;
+            height: 65px;
+            background-repeat: no-repeat;
+            background-position: 15px;
 
-    .appointment__phone {
-        background-image: url('/img/icons/appointment-icon3.svg');
-    }
+            @media screen and (max-width: 480px) {
+                display: flex;
+                flex-direction: column;
+                max-width: 340px;
+                gap: 10px;
+                padding: 20px 20px 20px 20px;
+            }
 
-    .appointment__service {
-        background-image: url('/img/icons/appointment-icon4.svg');
-    }
+            @media screen and (min-width: 481px) and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                max-width: 500px;
+                gap: 10px;
+            }
+        }
 
-    .appointment__note {
-        background-image: url('/img/icons/appointment-icon5.svg');
-        height: 123px;
-    }
+        .appointment__name {
+            background-image: url("/img/icons/appointment-icon1.svg");
+        }
 
-    input {
-        @include text-styles ($mainFont, 19px, 400, 30.4px, -1%);
-        color: #141414;
-        padding-left: 54px;
-    }
+        .appointment__mail {
+            background-image: url('/img/icons/appointment-icon2.svg');
+        }
 
-    .btn_green-secondary_uppercase {
-        @include btn(#7A9CA5, 23px 307px);
-        color: $btnTextLight;
-        text-transform: uppercase;
-        letter-spacing: 1.4px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        height: 65px;
-        width: 810px;
-        border: none;
+        .appointment__phone {
+            background-image: url('/img/icons/appointment-icon3.svg');
+        }
+
+        .appointment__service {
+            background-image: url('/img/icons/appointment-icon4.svg');
+        }
+
+        .appointment__note {
+            background-image: url('/img/icons/appointment-icon5.svg');
+            height: 123px;
+        }
+
+        input {
+            @include text-styles ($mainFont, 19px, 400, 30.4px, -1%);
+            color: #141414;
+            padding-left: 54px;
+        }
+
+        .btn_green-secondary_uppercase {
+            @include btn(#7A9CA5, 23px 307px);
+            color: $btnTextLight;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            height: 65px;
+            width: 810px;
+            border: none;
+        }
+
+        @media screen and (max-width: 480px) {
+            .btn_green-secondary_uppercase {
+                @include btn(#7A9CA5, 23px 107px);
+                color: $btnTextLight;
+                text-transform: uppercase;
+                letter-spacing: 1.4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                height: 65px;
+                width: 340px;
+                border: none;
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            .btn_green-secondary_uppercase {
+                @include btn(#7A9CA5, 23px 107px);
+                color: $btnTextLight;
+                text-transform: uppercase;
+                display: flex;
+                width: 500px;
+            }
+
+        }
     }
 }
