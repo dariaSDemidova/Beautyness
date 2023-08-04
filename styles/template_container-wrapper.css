@@ -15,9 +15,15 @@
     padding-right: 70px;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .container-wrapper {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
 @media (max-width: 480px) {
   .container-wrapper {
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }/*# sourceMappingURL=template_container-wrapper.css.map */
