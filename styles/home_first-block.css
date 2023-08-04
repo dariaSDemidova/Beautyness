@@ -1,0 +1,126 @@
+@import url(template_btn.css);
+.container__banner .container__banner__main .title__small-up_uppercase {
+  color: #5C8692;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.5%;
+  letter-spacing: 1.5px;
+}
+
+.container__banner .container__banner__main .title__h2 {
+  color: #141414;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.45px;
+}
+
+.container__banner .container__banner__main .title__small-down {
+  color: #555;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165%;
+  padding-top: 1%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container__banner {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-direction: row;
+  max-width: 100%;
+  height: 925px;
+  flex-shrink: 0;
+  align-items: center;
+  background-color: #EBF3F5;
+  margin: 0 auto;
+  padding-left: 260px;
+  padding-right: 260px;
+  background-image: url("/img/bg/home_first-block bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+@media (min-width: 992px) and (max-width: 1449px) {
+  .container__banner {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container__banner {
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+}
+@media (max-width: 480px) {
+  .container__banner {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+.container__banner .container__banner__info {
+  display: flex;
+  width: 510px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+.container__banner .container__banner__main .title__small-up_uppercase {
+  text-transform: uppercase;
+}
+.container__banner .container__banner__main .title__h2 {
+  max-width: 510px;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: -0.7px;
+  gap: 24px;
+}
+.container__banner .container__banner__main .title__small-down {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%;
+  /* 32.3px */
+  display: flex;
+  width: 508px;
+  height: 62px;
+}
+.container__banner .banner__button {
+  display: flex;
+  padding: 34px 0px;
+}
+.container__banner .banner__button .btn_green-secondary_uppercase-banner {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 1.68px;
+  background-color: #7A9CA5;
+  padding: 16px 33px;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  border: none;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+.container__banner .container__banner__image {
+  display: flex;
+  max-width: auto;
+  height: auto;
+  padding-right: 20%;
+}/*# sourceMappingURL=home_first-block.css.map */
