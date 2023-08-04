@@ -27,7 +27,7 @@ $seconBackColor: #EBF3F5;
     justify-content: space-around;
     background-color: $firstBackColor;
 
-    @media (min-width: 992px) and (max-width: 1449px) {
+    @media screen and (min-width: 992px) and (max-width: 1449px) {
         padding-left: 220px;
         padding-right: 220px;
         padding-top: 128px;
@@ -35,7 +35,7 @@ $seconBackColor: #EBF3F5;
         align-items: center;
     }
 
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media screen and (min-width: 768px) and (max-width: 991px) {
         padding-left: 115px;
         padding-right: 150px;
         padding-top: 100px;
@@ -50,7 +50,7 @@ $seconBackColor: #EBF3F5;
         }
     }
 
-    @media (max-width: 480px) {
+    @media screen and (max-width: 480px) {
         display: flex;
         flex-direction: column;
         padding-left: 80px;
@@ -67,14 +67,15 @@ $seconBackColor: #EBF3F5;
 
             #main_photo {
                 float: inline-start;
-                height: 450px;
+                max-height: 300px;
             }
 
             .contact-card__info {
                 display: flex;
                 flex-direction: column;
-                padding-left: 70px;
-                padding-right: 70px;
+                max-width: 80%;
+                padding-left: 60px;
+                padding-right: 60px;
             }
         }
     }
@@ -156,6 +157,15 @@ $seconBackColor: #EBF3F5;
     padding: 120px 455px;
     background-color: $seconBackColor;
 
+    @media screen and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 480px;
+        max-height: auto;
+        align-items: center;
+        padding: 50px 100px;
+    }
+
     .container__form {
         display: flex;
         justify-content: center;
@@ -167,6 +177,7 @@ $seconBackColor: #EBF3F5;
         .container__form__title {
             max-width: 622px;
             text-align: center;
+
 
             .container__form__title__h3 {
                 @extend %title_sm-top;
@@ -183,67 +194,65 @@ $seconBackColor: #EBF3F5;
                 padding-bottom: 65px;
             }
         }
+
+    }
+
+    .container_input {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 98px 100px;
+        background-color: $firstBackColor;
+        box-shadow: 0px 34px 50px 0px #442E1A12;
+    }
+
+    input {
+        border: none;
+        border: 1px solid #5C8692;
+        width: 810px;
+        height: 65px;
+        background-repeat: no-repeat;
+        background-position: 15px;
+    }
+
+    .appointment__name {
+        background-image: url("/img/icons/appointment-icon1.svg");
+    }
+
+    .appointment__mail {
+        background-image: url('/img/icons/appointment-icon2.svg');
+    }
+
+    .appointment__phone {
+        background-image: url('/img/icons/appointment-icon3.svg');
+    }
+
+    .appointment__service {
+        background-image: url('/img/icons/appointment-icon4.svg');
+    }
+
+    .appointment__note {
+        background-image: url('/img/icons/appointment-icon5.svg');
+        height: 123px;
+    }
+
+    input {
+        @include text-styles ($mainFont, 19px, 400, 30.4px, -1%);
+        color: #141414;
+        padding-left: 54px;
+    }
+
+    .btn_green-secondary_uppercase {
+        @include btn(#7A9CA5, 23px 307px);
+        color: $btnTextLight;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        height: 65px;
+        width: 810px;
+        border: none;
     }
 }
-
-.container_input {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 98px 100px;
-    background-color: $firstBackColor;
-    box-shadow: 0px 34px 50px 0px #442E1A12;
-}
-
-input {
-    border: none;
-    border: 1px solid #5C8692;
-    width: 810px;
-    height: 65px;
-    background-repeat: no-repeat;
-    background-position: 15px;
-}
-
-.appointment__name {
-    background-image: url("/img/icons/appointment-icon1.svg");
-}
-
-.appointment__mail {
-    background-image: url('/img/icons/appointment-icon2.svg');
-}
-
-.appointment__phone {
-    background-image: url('/img/icons/appointment-icon3.svg');
-}
-
-.appointment__service {
-    background-image: url('/img/icons/appointment-icon4.svg');
-}
-
-.appointment__note {
-    background-image: url('/img/icons/appointment-icon5.svg');
-    height: 123px;
-}
-
-input {
-    @include text-styles ($mainFont, 19px, 400, 30.4px, -1%);
-    color: #141414;
-    padding-left: 54px;
-}
-
-.btn_green-secondary_uppercase {
-    @include btn(#7A9CA5, 23px 307px);
-    color: $btnTextLight;
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    height: 65px;
-    width: 810px;
-    border: none;
-}
-
-
-/*футер*/

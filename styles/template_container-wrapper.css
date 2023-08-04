@@ -3,24 +3,21 @@
   padding-left: 360px;
   padding-right: 360px;
 }
-
 @media (min-width: 992px) and (max-width: 1449px) {
   .container-wrapper {
     padding-left: 220px;
     padding-right: 220px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .container-wrapper {
     padding-left: 115px;
     padding-right: 115px;
   }
 }
-
 @media (max-width: 480px) {
   .container-wrapper {
     padding-left: 80px;
     padding-right: 80px;
   }
-}
+}/*# sourceMappingURL=template_container-wrapper.css.map */
