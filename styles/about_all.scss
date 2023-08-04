@@ -53,24 +53,29 @@ body{
     align-items: center;
     min-width: 600px;
     max-width: 1200px;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    padding-top: 130px;
+    padding-bottom: 130px;
     background-color: #FFF;
+    margin: 0 auto;
     @media  (max-width: 480px) {
         min-width: auto; 
-        margin-top: 80px;
-        margin-bottom: 80px;    
+        padding-top: 80px;
+        padding-bottom: 80px;    
     }
     @media  (min-width: 481px) and (max-width: 767px) {
         min-width: auto; 
-        margin-top: 100px;
-        margin-bottom: 100px;    
+        padding-top: 80px;
+        padding-bottom: 80px;    
     }
     @media  (min-width: 768px) and (max-width: 991px) {
         min-width: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;   
     }
     @media  (min-width: 1449px) and (max-width: 1920px) {
         min-width: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     
@@ -222,7 +227,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 33px 45px;
     margin: 0px auto;
-    max-width: 1920px;
+    max-width: 729px;
     margin-top: 129px;
     margin-bottom: 129px;
     @media (max-width: 480px)  {
@@ -455,6 +460,11 @@ body{
         @media  (min-width: 481px) and (max-width: 767px) {
             flex-direction: column;
         }
+        @media  (min-width: 1450px) and (max-width: 1920px) {
+            min-width: 582px
+        }
+        
+  
     }
 }
 
@@ -477,10 +487,9 @@ body{
         display: flex;
     align-items: center;
     }
-
     @media (min-width: 992px) and (max-width: 1449px) { 
-            max-height: none;
-    }
+        max-height: none;
+}
 }
 
     .opinion__content {
@@ -510,8 +519,8 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 25px;
-        margin-bottom: 25px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         padding-left: 51px;
         padding-right: 51px;
         @media (max-width: 480px) {
@@ -527,8 +536,8 @@ body{
             flex-direction: column-reverse;
             align-items: flex-end;
             max-height: max-content;
-            margin-top: 15px;
-            margin-bottom: 15px;
+            margin-top: 40px;
+            margin-bottom: 40px;
             padding-left: 35px;
             padding-right: 35px;
             max-height: none;
@@ -543,6 +552,7 @@ body{
             max-height: none;
             gap: 24px;
         }
+
 
 
        
@@ -666,19 +676,20 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: 0 auto;
     @media (max-width: 480px) {
-        margin-top: 80px;
-        margin-bottom: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     @media  (min-width: 481px) and (max-width: 767px) {
-        margin-top: 80px;
-        margin-bottom: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
     @media (min-width: 768px) and (max-width: 991px) {
-        margin-top: 130px;
-        margin-bottom: 130px;
+        padding-top: 130px;
+        padding-bottom: 130px;
         
     }
 }
@@ -693,6 +704,9 @@ body{
     justify-items: center;
     min-height: 280px;
     max-width: 1200px;
+    width: 100%;
+    
+   
     row-gap: 45px;
     -moz-column-gap: 50px;
     column-gap: 50px;
@@ -708,6 +722,7 @@ body{
             "pic2"
             "pic3";
             row-gap: 35px;
+          
         }
         @media  (min-width: 481px) and (max-width: 767px) {
             grid-template-columns: auto;
@@ -718,6 +733,7 @@ body{
             "pic2"
             "pic3";
             row-gap: 30px;
+            
         }
         @media (min-width: 768px) and (max-width: 991px) {
             grid-template-columns: 1fr 50%;
@@ -728,6 +744,10 @@ body{
             "pic3 pic3";
             row-gap: 20px;
             column-gap: 20px;
+       
+        }
+        @media (min-width: 992px) and (max-width: 1449px) {
+            min-width: auto;
         }
     }
 
@@ -866,5 +886,3 @@ body{
         }
     }
 }
-
-
