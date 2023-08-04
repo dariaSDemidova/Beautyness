@@ -152,6 +152,11 @@ body {
     grid-template-columns: 1fr;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .services__container1 {
+    grid-template-columns: 1fr;
+  }
+}
 
 .services__container1 {
   padding-top: 50px;
@@ -791,20 +796,4 @@ input {
   align-items: center;
   gap: 23px;
   height: 64px;
-  width: 399px;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .btn_green-secondary_uppercase {
-    width: 200px;
-  }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .btn_green-secondary_uppercase {
-    width: 200px;
-  }
-}
-@media (max-width: 480px) {
-  .btn_green-secondary_uppercase {
-    width: 200px;
-  }
 }/*# sourceMappingURL=index.css.map */
