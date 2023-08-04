@@ -19,6 +19,11 @@
         max-height: 2500px;
     }
 
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 16px 90px;
+        max-height: 2500px;
+    }
+
     @media (min-width: 768px) and (max-width: 991px) {
         padding: 16px 90px;
         max-height: 2500px;
@@ -37,25 +42,57 @@
 
     @media (max-width: 480px) {
         flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        flex-direction: column;
+        padding-bottom: 20px;
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
         flex-direction: column;
+        padding-bottom: 20px;
     }
 }
 
 
 .footer__logo {
     @include text-styles ($secondaryFont, 40px, 700, 50px, 2%);
+
+    @media (max-width: 480px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .footer__icons {
     @media (max-width: 480px) {
         margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
         margin-top: 30px;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -72,10 +109,19 @@ hr {
 
     @media (max-width: 480px) {
         flex-direction: column;
+        padding-top: 20px;
+        gap: 50px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 50px;
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
         flex-direction: column;
+        gap: 50px;
     }
 }
 
@@ -83,6 +129,18 @@ hr {
 .utility {
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 480px) {
+        display: none;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: none;
+    }
 }
 
 .explore__title,
@@ -111,8 +169,7 @@ hr {
 }
 
 .contacts__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 29px;
 }
 
