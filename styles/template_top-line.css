@@ -27,17 +27,18 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .top__line {
-    flex-direction: column;
-    padding: 38px 46px 38px 46px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1449px) {
   .top__line {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
     gap: 15px;
+    align-items: center;
   }
 }
 
@@ -62,17 +63,19 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .container_logo {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    gap: 60px;
+    align-items: flex-start;
+    gap: 15px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1449px) {
   .container_logo {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
   }
 }
@@ -162,17 +165,19 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .navigation {
+    display: flex;
     justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
     gap: 25px;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1449px) {
   .navigation {
+    display: flex;
     justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
     gap: 25px;
   }
 }
@@ -279,4 +284,14 @@ body {
   height: 50px;
   width: 199px;
   border: none;
+}
+@media screen and (min-width: 992px) and (max-width: 1449px) {
+  .btn_green-secondary_uppercase1 {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .btn_green-secondary_uppercase1 {
+    display: none;
+  }
 }/*# sourceMappingURL=template_top-line.css.map */
