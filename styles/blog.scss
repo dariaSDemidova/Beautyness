@@ -108,4 +108,9 @@
     .blog-main-container {
         grid-gap: 60px 44px;
     }
+
+    .card-author__date,
+    .card-author__name {
+        font-size: 11px;
+    }
 }
