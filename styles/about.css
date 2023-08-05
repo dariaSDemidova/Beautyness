@@ -54,25 +54,32 @@ body {
 @media (max-width: 480px) {
   .values {
     min-width: auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 55px;
+    padding-bottom: 10px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .values {
     min-width: auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 65px;
+    padding-bottom: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .values {
     min-width: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 20px;
   }
 }
-@media (min-width: 1449px) and (max-width: 1920px) {
+@media (min-width: 992px) and (max-width: 1449px) {
+  .values {
+    min-width: auto;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1450px) and (max-width: 1920px) {
   .values {
     min-width: auto;
     padding-top: 100px;
@@ -96,14 +103,14 @@ body {
   .values-title .title__h2 {
     max-width: none;
     text-align: center;
-    min-width: 330px;
+    max-width: 330px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .values-title .title__h2 {
     max-width: none;
     text-align: center;
-    min-width: 330px;
+    max-width: 344px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -237,12 +244,12 @@ body {
 }
 @media (max-width: 480px) {
   .value__text-block .value__text {
-    min-width: 293px;
+    max-width: 280px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .value__text-block .value__text {
-    min-width: 400px;
+    max-width: 400px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -269,8 +276,8 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: none;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 55px;
+    margin-bottom: 55px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -279,8 +286,8 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: none;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 65px;
+    margin-bottom: 65px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -289,11 +296,15 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: none;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 }
 @media (min-width: 992px) and (max-width: 1449px) {
   .team .container {
     grid-gap: 33px 8px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -402,11 +413,6 @@ body {
   line-height: 120%;
   letter-spacing: 0;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .team__card .card-info .card-info__name {
-    font-size: 35px;
-  }
-}
 .team__card .card-info .card-info__position {
   color: #5C8692;
   padding-top: 4px;
@@ -416,11 +422,6 @@ body {
   line-height: 154.5%;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .team__card .card-info .card-info__position {
-    font-size: 22px;
-  }
 }
 .team__card .card-info .card-info__description {
   color: #555;
@@ -432,21 +433,11 @@ body {
   line-height: 160%;
   letter-spacing: 0;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-  .team__card .card-info .card-info__description {
-    font-size: 26px;
-  }
-}
 .team__card .card-info .carf-info__icons {
   display: flex;
   align-items: center;
   padding-top: 23px;
   gap: 30px;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .team__card .card-info .carf-info__icons .icon {
-    height: 25px;
-  }
 }
 
 .opinion {
@@ -462,20 +453,26 @@ body {
 }
 @media (max-width: 480px) {
   .opinion .opinion__block {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .opinion .opinion__block {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .opinion .opinion__block {
-    margin-top: 110px;
-    margin-bottom: 110px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1449px) {
+  .opinion .opinion__block {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -633,8 +630,8 @@ body {
     align-items: flex-end;
     max-height: -moz-max-content;
     max-height: max-content;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     padding-left: 35px;
     padding-right: 35px;
     max-height: none;
@@ -729,6 +726,7 @@ body {
   .customer-info__text {
     align-items: flex-end;
     text-align: end;
+    min-width: 194px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -802,20 +800,26 @@ body {
 }
 @media (max-width: 480px) {
   .follow {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .follow {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .follow {
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1449px) {
+  .follow {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -838,7 +842,7 @@ body {
     grid-template-columns: auto;
     grid-template-rows: 352px 1fr 1fr 1fr;
     grid-template-areas: "title" "pic1" "pic2" "pic3";
-    row-gap: 35px;
+    row-gap: 20px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -900,7 +904,7 @@ body {
 @media (min-width: 481px) and (max-width: 767px) {
   .pic-box1 {
     margin-top: 0px;
-    min-width: 433px;
+    min-width: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -932,7 +936,7 @@ body {
   .follow-title {
     max-height: none;
     text-align: center;
-    max-width: 411px;
+    max-width: 409px;
     max-height: 355px;
   }
 }
@@ -950,7 +954,7 @@ body {
 @media (max-width: 480px) {
   .follow-title .title__h2 {
     max-width: none;
-    min-width: 320px;
+    min-width: none;
     margin-bottom: 22px;
     margin-top: 9px;
   }
@@ -995,7 +999,7 @@ body {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .follow__btn {
-    margin-top: 94px;
+    margin-top: 41px;
   }
 }
 .follow__btn .btn_green_uppercase {
