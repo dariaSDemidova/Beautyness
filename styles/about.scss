@@ -14,36 +14,7 @@ body{
     border: 3px solid red;
 }
 
-.header__top-line {
-    @media  (min-width: 481px) and (max-width: 767px) {
-        display: none;   
-    }
-    @media  (min-width: 768px) and (max-width: 991px) {
-        display: none;   
-    }
-    @media  (min-width: 992px) and (max-width: 1449px) {
-        display: none;   
-    }
-    @media  (min-width: 1450px) and (max-width: 1920px) {
-        display: none;   
-    }
-}
 
-
-.footer {
-    @media  (min-width: 481px) and (max-width: 767px) {
-        display: none;   
-    }
-    @media  (min-width: 768px) and (max-width: 991px) {
-        display: none;   
-    }
-    @media  (min-width: 992px) and (max-width: 1449px) {
-        display: none;   
-    }
-    @media  (min-width: 1450px) and (max-width: 1920px) {
-        display: none;   
-    }
-}
 
 
 .values {
@@ -58,20 +29,25 @@ body{
     margin: 0 auto;
     @media  (max-width: 480px) {
         min-width: auto; 
-        padding-top: 80px;
-        padding-bottom: 80px;    
+        padding-top: 55px;
+        padding-bottom: 10px;    
     }
     @media  (min-width: 481px) and (max-width: 767px) {
         min-width: auto; 
-        padding-top: 80px;
-        padding-bottom: 80px;    
+        padding-top: 65px;
+        padding-bottom: 15px;    
     }
     @media  (min-width: 768px) and (max-width: 991px) {
         min-width: auto;
-        padding-top: 100px;
-        padding-bottom: 100px;   
+        padding-top: 80px;
+        padding-bottom: 20px;   
     }
-    @media  (min-width: 1449px) and (max-width: 1920px) {
+    @media  (min-width: 992px) and (max-width: 1449px) {
+        min-width: auto;
+        padding-top: 80px;
+        padding-bottom: 20px;   
+    }
+    @media  (min-width: 1450px) and (max-width: 1920px) {
         min-width: auto;
         padding-top: 100px;
         padding-bottom: 100px;
@@ -93,12 +69,12 @@ body{
         @media (max-width: 480px) {
             max-width:none;
             text-align: center;
-            min-width: 330px;
+            max-width: 330px;
         }
         @media  (min-width: 481px) and (max-width: 767px) {
             max-width:none;
             text-align: center;
-            min-width: 330px; 
+            max-width: 344px; 
         }
         @media  (min-width: 768px) and (max-width: 991px) {
             max-width:none;
@@ -202,10 +178,10 @@ body{
         line-height: 175%;
         max-width: 458px;
         @media (max-width: 480px){
-            min-width: 293px;
+            max-width: 280px;
         }
         @media  (min-width: 481px) and (max-width: 767px) {
-            min-width: 400px;
+            max-width: 400px;
         }
         @media (min-width: 768px) and (max-width: 991px) {
             max-width: 531px;
@@ -229,27 +205,32 @@ body{
         flex-direction: column;
         align-items: center;
         max-width: none;
-        margin-top: 80px;
-        margin-bottom: 80px;
+        margin-top: 55px;
+        margin-bottom: 55px;
     }
     @media  (min-width: 481px) and (max-width: 767px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         max-width: none;
-        margin-top: 100px;
-        margin-bottom: 100px;
+        margin-top: 65px;
+        margin-bottom: 65px;
     }
     @media (min-width: 768px) and (max-width: 991px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         max-width: none;
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
     @media  (min-width: 992px) and (max-width: 1449px) {
         grid-gap: 33px 8px;
+        padding-top: 80px;
+        padding-bottom: 80px;  
     }
 }
+
 
 .block-title {
     display: grid;
@@ -291,7 +272,7 @@ body{
     @media  (min-width: 1450px) and (max-width: 1920px) {
         width: 350px;
         align-items: center;
-        }
+    }
 }
 
 .team .card-image {
@@ -329,41 +310,28 @@ body{
         .card-info__name {
             color: #141414;
             @include text-styles ($secondaryFont, 24px, 700, 120%, 0);
-            @media  (min-width: 768px) and (max-width: 991px) {
-            font-size: 35px;
         }
-    }
         .card-info__position {
             color: #5C8692;
             padding-top: 4px;
             @include text-styles ($mainFont, 15px, 600, 154.5%, 1.5px);
-            text-transform: uppercase;
-            @media  (min-width: 768px) and (max-width: 991px) {
-            font-size: 22px;
+            text-transform: uppercase;    
         }
-    }
         .card-info__description {
             color: #555;
             padding-top: 8px;
             text-align: center;
             @include text-styles ($mainFont, 18px, 400, 160%, 0);
-            @media  (min-width: 768px) and (max-width: 991px) {
-            font-size: 26px;
         }
-    }
         .carf-info__icons {
             display: flex;
             align-items: center;
             padding-top: 23px;
             gap: 30px;
-            .icon {
-                @media  (min-width: 768px) and (max-width: 991px) {
-                    height: 25px;
-                }
-            }
         }
     }
 }
+
 
 //Здесь стили для секции opinion
 .opinion {
@@ -376,16 +344,20 @@ body{
         padding-top: 147px;
         padding-bottom: 147px;
         @media (max-width: 480px)  {
-            padding-top: 80px;
-            padding-bottom: 80px; 
+            padding-top: 55px;
+            padding-bottom: 55px; 
         }
         @media  (min-width: 481px) and (max-width: 767px) {
-            padding-top: 80px;
-            padding-bottom: 80px; 
+            padding-top: 65px;
+            padding-bottom: 65px; 
         }
         @media  (min-width: 768px) and (max-width: 991px) {
-            margin-top: 110px;
-            margin-bottom: 110px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+        }
+        @media  (min-width: 992px) and (max-width: 1449px) {
+            padding-top: 80px;
+            padding-bottom: 80px;  
         }
     }
 }
@@ -508,8 +480,8 @@ body{
             flex-direction: column-reverse;
             align-items: flex-end;
             max-height: max-content;
-            margin-top: 40px;
-            margin-bottom: 40px;
+            margin-top: 25px;
+            margin-bottom: 25px;
             padding-left: 35px;
             padding-right: 35px;
             max-height: none;
@@ -583,6 +555,7 @@ body{
     @media (max-width: 480px) {
         align-items: flex-end;
         text-align: end; 
+        min-width: 194px;
     }
     @media  (min-width: 768px) and (max-width: 991px) {
         min-width: auto;
@@ -643,17 +616,20 @@ body{
     padding-bottom: 150px;
     margin: 0 auto;
     @media (max-width: 480px) {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 55px;
+        padding-bottom:55px;
     }
     @media  (min-width: 481px) and (max-width: 767px) {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-    @media (min-width: 768px) and (max-width: 991px) {
-        padding-top: 130px;
-        padding-bottom: 130px;
-        
+    @media  (min-width: 992px) and (max-width: 1449px) {
+        padding-top: 80px;
+        padding-bottom: 80px;  
     }
 }
 
@@ -681,7 +657,7 @@ body{
             "pic1"
             "pic2"
             "pic3";
-            row-gap: 35px;
+            row-gap: 20px;
         }
         @media  (min-width: 481px) and (max-width: 767px) {
             grid-template-columns: auto;
@@ -734,7 +710,7 @@ body{
     }
     @media  (min-width: 481px) and (max-width: 767px) {
         margin-top: 0px;
-        min-width:433px;
+        min-width: auto;
     }
     @media  (min-width: 768px) and (max-width: 991px) {
         margin-top: 0px;
@@ -760,7 +736,7 @@ body{
     @media  (min-width: 481px) and (max-width: 767px) {
         max-height: none;
         text-align: center;
-        max-width: 411px;
+        max-width: 409px;
         max-height: 355px;
     }
     @media  (min-width: 768px) and (max-width: 991px) {
@@ -774,7 +750,7 @@ body{
         @include title_h2(264px);
         @media (max-width: 480px) {
             max-width: none;
-            min-width: 320px;
+            min-width: none;
             margin-bottom: 22px;
             margin-top: 9px;  
         }
@@ -811,7 +787,7 @@ body{
         margin-top: 0px; 
     }
     @media  (min-width: 768px) and (max-width: 991px) {
-        margin-top: 94px;
+        margin-top: 41px;
     }
 
     .btn_green_uppercase {
