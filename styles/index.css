@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.discount__subtitle, .opinion__title .title__small-up_uppercase, .services__subtitle {
+.discount__subtitle, .opinion__title .title__small-up_uppercase, .services__subtitle, .left-container__text-h2 {
   color: #5C8692;
   font-family: "Manrope", sans-serif;
   font-size: 15px;
@@ -15,7 +15,7 @@
   letter-spacing: 1.5px;
 }
 
-.discount__title, .opinion__title .title__h2, .services__title {
+.discount__title, .opinion__title .title__h2, .services__title, .left-container__text-h1 {
   color: #141414;
   font-family: "Playfair Display", serif;
   font-size: 45px;
@@ -122,6 +122,361 @@ body {
   }
 }
 /* конец стилей второго блока с карточками (Саша) */
+/* начало стилей третьего блока ABOUT US (Саша) */
+.home-about {
+  background: #EBF3F5;
+}
+
+.home-container {
+  display: flex;
+  max-width: 1200px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  gap: 125px;
+}
+
+.home-about .left-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 27px;
+}
+
+.left-container__text-h2 {
+  text-transform: uppercase;
+}
+
+.left-container__text-h1 {
+  padding-top: 9px;
+}
+
+.left-container__text-description {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 165%;
+  letter-spacing: 0;
+  color: #555;
+  padding-top: 16px;
+}
+
+.left-container__cards {
+  display: flex;
+  gap: 10px;
+  padding-top: 35px;
+}
+
+.left-container__cards .card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #1E2C30;
+  background: #FFF;
+  width: 165px;
+  padding: 17px 33px 19px 33px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.card .card_text {
+  display: flex;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.home-about .right-container {
+  position: relative;
+}
+
+.right-container__girl {
+  position: absolute;
+  top: 45px;
+  right: 38px;
+}
+
+.card__icon {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .home-about .right-container {
+    display: none;
+  }
+  .left-container__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-container__text {
+    text-align: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+  .home-about .left-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .left-container__text {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) and (max-width: 1450px) {
+  .home-container {
+    margin: 0px auto;
+  }
+}
+/* конец стилей блока ABOUT US (Саша) */
+/* начало стилей блока OUR AWESOME BENEFITS (Саша) */
+.home-benefits-block__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px 105px;
+  margin: 0px auto;
+  max-width: 1920px;
+  padding-top: 144px;
+  padding-bottom: 161px;
+}
+
+.home-benefits-block-title {
+  display: grid;
+  grid-column: 1/4;
+  justify-content: center;
+  margin-bottom: 43px;
+}
+
+.home-benefits-block-title__h1 {
+  color: #5C8692;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 154.5%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.home-benefits-block-title__h2 {
+  color: #141414;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.45px;
+  padding-top: 9px;
+}
+
+.home-benefits-block__text-title {
+  color: #141414;
+  padding-top: 20px;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.home-benefits-block__text-description {
+  color: #555;
+  padding-top: 11px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 165%;
+  letter-spacing: 0.36px;
+}
+
+@media (max-width: 480px) {
+  .home-benefits-block__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-benefits-block__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-benefits-block__icon {
+    max-width: 90px;
+    max-height: 90px;
+  }
+  .home-benefits-block__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-benefits-block-title {
+    margin-bottom: 20px;
+  }
+}
+/* конец стилей блока OUR AWESOME BENEFITS (Саша) */
+/* начало стилей последнего блока (Саша) */
+.team-main__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 33px 45px;
+  margin: 0px auto;
+  max-width: 1920px;
+  padding-top: 129px;
+  padding-bottom: 151px;
+}
+
+.team-main .block-title {
+  display: grid;
+  grid-column: 1/4;
+  justify-content: center;
+}
+
+.team-main__container > a {
+  text-decoration: none;
+}
+
+.block-title__h2 {
+  color: #5C8692;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 154.5%;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.block-title__h1 {
+  color: #141414;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.45px;
+  padding-top: 9px;
+}
+
+.blog-main__card.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-image {
+  max-width: 100%;
+}
+
+.blog-main__card .card-info {
+  padding: 30px 27px 30px 27px;
+  background: #EDF5F7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  height: 100%;
+}
+
+.card-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-author__date,
+.card-author__name {
+  color: #5C8692;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0.78px;
+  text-transform: uppercase;
+}
+
+.card-author__delimiter {
+  width: 20px;
+  height: 2px;
+  background: #272D32;
+}
+
+.card-title {
+  color: #141414;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+}
+
+.card-description {
+  color: #555;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 155%;
+  letter-spacing: 0.36px;
+}
+
+.btn_transparent_uppercase {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 1.68px;
+  background-color: transparent;
+  padding: 23px 36px 24px 36px;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  border: none;
+  color: #141414;
+  text-transform: uppercase;
+  border: 2px solid #5C8692;
+  grid-column: 2;
+  width: 250px;
+  height: 65px;
+  justify-self: center;
+}
+
+@media (max-width: 480px) {
+  .team-main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .team-main__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 70px;
+  }
+  .team-main .block-title {
+    display: grid;
+    grid-column: 1/3;
+  }
+  .btn_transparent_uppercase {
+    display: grid;
+    grid-column: 1/3;
+  }
+}
+/* конец стилей последнего блока (Саша) */
 .services {
   max-width: 1920px;
 }
@@ -550,7 +905,8 @@ hr {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 160%; /* 32px */
+  line-height: 160%;
+  /* 32px */
   letter-spacing: -0.2px;
 }
 .customer-info__text .customer-city {
@@ -558,7 +914,8 @@ hr {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 160%; /* 22.4px */
+  line-height: 160%;
+  /* 22.4px */
   letter-spacing: 0.42px;
 }
 
