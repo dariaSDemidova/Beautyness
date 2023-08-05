@@ -33,6 +33,12 @@ $seconBackColor: #EBF3F5;
         padding-top: 128px;
         padding-bottom: 108px;
         align-items: center;
+
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 50px
+        }
     }
 
     @media screen and (min-width: 769px) and (max-width: 991px) {
@@ -110,7 +116,6 @@ $seconBackColor: #EBF3F5;
     }
 }
 
-
 @media screen and (max-width: 480px) {
     .contact-main {
         display: flex;
@@ -158,6 +163,7 @@ $seconBackColor: #EBF3F5;
         }
     }
 }
+
 
 
 .contact-card {
