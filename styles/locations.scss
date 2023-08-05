@@ -33,7 +33,7 @@ $firstBackColor: #FFF;
         padding-bottom: 108px;
         align-items: center;
 
-        .сontact-card {
+        .contact-card {
             display: flex;
             align-items: center;
             gap: 60px;
@@ -64,7 +64,7 @@ $firstBackColor: #FFF;
         padding-bottom: 90px;
         align-items: center;
 
-        .сontact-card {
+        .contact-card {
             display: flex;
             align-items: center;
             gap: 60px;
@@ -96,7 +96,7 @@ $firstBackColor: #FFF;
                 .contact-card__h3 {
                     color: #5C8692;
                     font-family: $mainFont;
-                    font-size: 8px;
+                    font-size: 10px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: 154.5%;
@@ -106,7 +106,7 @@ $firstBackColor: #FFF;
                 .contact-card__h1 {
                     color: #141414;
                     font-family: $secondaryFont;
-                    font-size: 20px;
+                    font-size: 25px;
                     font-style: normal;
                     font-weight: 700;
                     line-height: 130%;
@@ -120,7 +120,7 @@ $firstBackColor: #FFF;
                 .contact_text {
                     color: $textColor;
                     font-family: $mainFont;
-                    font-size: 8px;
+                    font-size: 10px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: 125%;
@@ -131,7 +131,7 @@ $firstBackColor: #FFF;
                 .contact_title {
                     color: $textColor;
                     font-family: $secondaryFont;
-                    font-size: 10px;
+                    font-size: 12px;
                     font-style: normal;
                     font-weight: 700;
                     line-height: 125%;
@@ -177,19 +177,13 @@ $firstBackColor: #FFF;
         padding: 40px 80px;
         align-items: center;
 
-        .сontact-card {
+        .contact-card {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
 
             #main_photo {
-                float: inline-start;
-                height: 350px;
-                width: auto;
-            }
-
-            #main_photo_adaptive {
                 float: inline-start;
                 height: 350px;
                 width: auto;
@@ -232,19 +226,13 @@ $firstBackColor: #FFF;
         padding: 40px 80px;
         align-items: center;
 
-        .сontact-card {
+        .contact-card {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
 
             #main_photo {
-                float: inline-start;
-                height: 350px;
-                width: auto;
-            }
-
-            #main_photo_adaptive {
                 float: inline-start;
                 height: 350px;
                 width: auto;
@@ -281,10 +269,22 @@ $firstBackColor: #FFF;
     }
 
 
-    .сontact-card {
+    .contact-card {
         display: flex;
         align-items: center;
         gap: 129px;
+
+        @media screen and (max-width: 480px) {
+            gap: 10px;
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            gap: 10px;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 991px) {
+            gap: 60px;
+        }
     }
 
     #main_photo {
@@ -294,7 +294,9 @@ $firstBackColor: #FFF;
     }
 
     #main_photo_adaptive {
-        display: none;
+        float: inline-start;
+        height: 350px;
+        width: auto;
     }
 
     #main_photo_exclude {
@@ -302,102 +304,104 @@ $firstBackColor: #FFF;
         width: 646px;
         height: 681px;
     }
+}
 
-    /*основной текст карточки*/
-    .contact-card__info {
-        display: flex;
-        width: 425px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 50px;
-        flex-shrink: 0;
 
-        .contact-card__h3 {
-            @extend %title_sm-top;
-            text-transform: uppercase;
-            padding-bottom: 9px;
-        }
 
-        .contact-card__h1 {
-            @include title_h2 (435px);
-        }
+/*основной текст карточки*/
+.contact-card__info {
+    display: flex;
+    width: 425px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    flex-shrink: 0;
+
+    .contact-card__h3 {
+        @extend %title_sm-top;
+        text-transform: uppercase;
+        padding-bottom: 9px;
     }
 
-    /*иконки с контактами*/
-    .contact-card__contacts {
-
-        .contact_text {
-            color: $textColor;
-            font-family: $mainFont;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 125%;
-            letter-spacing: 0.96px;
-            text-transform: uppercase;
-        }
-
-        .contact_title {
-            color: $textColor;
-            font-family: $secondaryFont;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 125%;
-            gap: 25px;
-        }
-
-        .icon {
-            height: 75px;
-            width: 75px;
-            padding: 0px 27px 0px 0px;
-        }
-
-        .contact-card__container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
+    .contact-card__h1 {
+        @include title_h2 (435px);
     }
+}
 
-    .btn_green-secondary_uppercase {
-        @include btn(#7A9CA5, 23px 36px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $btnTextLight;
-        text-align: center;
+/*иконки с контактами*/
+.contact-card__contacts {
+
+    .contact_text {
+        color: $textColor;
         font-family: $mainFont;
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
-        font-weight: 800;
+        font-weight: 600;
         line-height: 125%;
-        letter-spacing: 1.68px;
+        letter-spacing: 0.96px;
+        text-transform: uppercase;
+    }
+
+    .contact_title {
+        color: $textColor;
+        font-family: $secondaryFont;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+        gap: 25px;
+    }
+
+    .icon {
+        height: 75px;
+        width: 75px;
+        padding: 0px 27px 0px 0px;
+    }
+
+    .contact-card__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.btn_green-secondary_uppercase {
+    @include btn(#7A9CA5, 23px 36px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $btnTextLight;
+    text-align: center;
+    font-family: $mainFont;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 125%;
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+    gap: 10px;
+
+    @media screen and (max-width: 480px) {
+        @include btn(#7A9CA5, 13px 26px);
+        display: flex;
+        font-size: 2vh;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+        letter-spacing: 1.4px;
         text-transform: uppercase;
         gap: 10px;
+    }
 
-        @media screen and (max-width: 480px) {
-            @include btn(#7A9CA5, 13px 26px);
-            display: flex;
-            font-size: 2vh;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 125%;
-            letter-spacing: 1.4px;
-            text-transform: uppercase;
-            gap: 10px;
-        }
-
-        @media screen and (min-width: 481px) and (max-width: 768px) {
-            @include btn(#7A9CA5, 13px 26px);
-            display: flex;
-            font-size: 2vh;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 125%;
-            letter-spacing: 1.4px;
-            text-transform: uppercase;
-            gap: 10px;
-        }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        @include btn(#7A9CA5, 13px 26px);
+        display: flex;
+        font-size: 2vh;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        gap: 10px;
     }
 }
