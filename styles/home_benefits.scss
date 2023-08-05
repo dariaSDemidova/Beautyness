@@ -1,0 +1,83 @@
+@import '_variables';
+@import '_mixins';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home-benefits-block__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px 105px;
+    margin: 0px auto;
+    max-width: 1920px;
+    padding-top: 144px;
+    padding-bottom: 161px;
+}
+
+.home-benefits-block-title {
+    display: grid;
+    grid-column: 1/4;
+    justify-content: center;
+    margin-bottom: 43px;
+}
+
+
+.home-benefits-block-title__h1 {
+    color: #5C8692;
+    text-align: center;
+    @include text-styles ($mainFont, 15px, 600, 154.5%, 1.5px);
+    text-transform: uppercase;
+}
+
+.home-benefits-block-title__h2 {
+    color: #141414;
+    text-align: center;
+    @include text-styles ($secondaryFont, 45px, 700, 130%, -0.45px);
+    padding-top: 9px;
+}
+
+.home-benefits-block__text-title {
+    color: #141414;
+    padding-top: 20px;
+    @include text-styles ($secondaryFont, 24px, 700, 120%, 0);
+}
+
+.home-benefits-block__text-description {
+    color: #555;
+    padding-top: 11px;
+    @include text-styles ($mainFont, 18px, 400, 165%, 0.36px);
+}
+
+
+@media (max-width: 480px) {
+    .home-benefits-block__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-benefits-block__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-benefits-block__icon {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    .home-benefits-block__text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-benefits-block-title {
+        margin-bottom: 20px;
+    }
+}

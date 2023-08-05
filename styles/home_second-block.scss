@@ -15,6 +15,10 @@
     gap: 105px;
 }
 
+.home-second-block_card-image {
+    max-width: 100%;
+}
+
 .home-second-block__text-block .text-block__h1 {
     color: #141414;
     @include text-styles ($secondaryFont, 26px, 700, 120%, 0);
@@ -40,8 +44,7 @@
     justify-self: center;
 }
 
-@media (max-width: 415px) {
-
+@media (max-width: 480px) {
     .home-second-block__container {
         display: flex;
         flex-direction: column;
@@ -56,7 +59,7 @@
     }
 }
 
-@media (min-width:416px) and (max-width: 991px) {
+@media (min-width:481px) and (max-width: 991px) {
     .home-second-block__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
