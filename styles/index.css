@@ -38,7 +38,6 @@
 body {
   margin: 0 auto;
   width: 100%;
-  border: 3px solid red;
 }
 
 /* начало стилей первого блока с карточками (Оксана) */
@@ -847,7 +846,7 @@ hr {
 }
 
 .opinion {
-  background-color: #a3dae4;
+  background-color: #EDF5F7;
 }
 .opinion .opinion__block {
   display: flex;
