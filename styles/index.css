@@ -476,6 +476,12 @@ body {
     grid-column: 1/3;
   }
 }
+@media (min-width: 1450px) {
+  .card-author__date,
+  .card-author__name {
+    font-size: 11px;
+  }
+}
 /* конец стилей последнего блока (Саша) */
 .services {
   max-width: 1920px;

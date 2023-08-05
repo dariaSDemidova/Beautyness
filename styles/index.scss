@@ -418,6 +418,14 @@ body {
     }
 }
 
+@media (min-width: 1450px) {
+
+    .card-author__date,
+    .card-author__name {
+        font-size: 11px;
+    }
+}
+
 /* конец стилей последнего блока (Саша) */
 
 
