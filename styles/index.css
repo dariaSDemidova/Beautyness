@@ -353,6 +353,11 @@ hr {
     flex-direction: column;
   }
 }
+@media (min-width: 1450px) and (max-width: 1920px) {
+  .opinion__card-list .opinion__card {
+    min-width: 582px;
+  }
+}
 
 .opinion__light-box {
   background: rgb(255, 255, 255);
@@ -385,8 +390,7 @@ hr {
     max-height: none;
   }
 }
-
-.opinion__content {
+.opinion__light-box .opinion__content {
   max-width: 528px;
   font-family: "Manrope", sans-serif;
   font-size: 19px;
@@ -395,7 +399,7 @@ hr {
   line-height: 180%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .opinion__content {
+  .opinion__light-box .opinion__content {
     max-width: none;
   }
 }
@@ -415,8 +419,8 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding-left: 51px;
   padding-right: 51px;
 }
@@ -438,8 +442,8 @@ hr {
     align-items: flex-end;
     max-height: -moz-max-content;
     max-height: max-content;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     padding-left: 35px;
     padding-right: 35px;
     max-height: none;
@@ -459,20 +463,14 @@ hr {
     gap: 24px;
   }
 }
-@media (min-width: 1450px) and (max-width: 1920px) {
-  .opinion__dark-box .dark-box__content {
-    max-height: none;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-}
-.opinion__dark-box .dark-box__content .opinion__customer-info {
+
+.opinion__customer-info {
   display: flex;
   max-width: 232px;
   gap: 38px;
 }
 @media (max-width: 480px) {
-  .opinion__dark-box .dark-box__content .opinion__customer-info {
+  .opinion__customer-info {
     flex-direction: row;
     align-items: none;
     justify-content: flex-start;
@@ -481,7 +479,7 @@ hr {
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  .opinion__dark-box .dark-box__content .opinion__customer-info {
+  .opinion__customer-info {
     flex-direction: row;
     align-items: none;
     justify-content: flex-start;
@@ -490,43 +488,45 @@ hr {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .opinion__dark-box .dark-box__content .opinion__customer-info {
+  .opinion__customer-info {
     gap: 44px;
   }
 }
 @media (min-width: 992px) and (max-width: 1449px) {
-  .opinion__dark-box .dark-box__content .opinion__customer-info {
+  .opinion__customer-info {
     max-width: none;
     gap: 25px;
   }
 }
-.opinion__dark-box .dark-box__content .customer-info__photo {
+
+.customer-info__photo {
   max-height: 100%;
 }
 @media (max-width: 480px) {
-  .opinion__dark-box .dark-box__content .customer-info__photo {
+  .customer-info__photo {
     height: auto;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  .opinion__dark-box .dark-box__content .customer-info__photo {
+  .customer-info__photo {
     height: auto;
   }
 }
-.opinion__dark-box .dark-box__content .customer-info__photo .customer-pic {
+.customer-info__photo .customer-pic {
   height: 100%;
 }
 @media (max-width: 480px) {
-  .opinion__dark-box .dark-box__content .customer-info__photo .customer-pic {
+  .customer-info__photo .customer-pic {
     height: auto;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  .opinion__dark-box .dark-box__content .customer-info__photo .customer-pic {
+  .customer-info__photo .customer-pic {
     height: auto;
   }
 }
-.opinion__dark-box .dark-box__content .customer-info__text {
+
+.customer-info__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -535,32 +535,30 @@ hr {
   justify-content: space-evenly;
 }
 @media (max-width: 480px) {
-  .opinion__dark-box .dark-box__content .customer-info__text {
+  .customer-info__text {
     align-items: flex-end;
     text-align: end;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .opinion__dark-box .dark-box__content .customer-info__text {
+  .customer-info__text {
     min-width: auto;
   }
 }
-.opinion__dark-box .dark-box__content .customer-info__text .customer-name {
+.customer-info__text .customer-name {
   font-family: "Playfair Display", serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 160%;
-  /* 32px */
+  line-height: 160%; /* 32px */
   letter-spacing: -0.2px;
 }
-.opinion__dark-box .dark-box__content .customer-info__text .customer-city {
+.customer-info__text .customer-city {
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 160%;
-  /* 22.4px */
+  line-height: 160%; /* 22.4px */
   letter-spacing: 0.42px;
 }
 
