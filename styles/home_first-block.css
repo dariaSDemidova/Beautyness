@@ -49,6 +49,7 @@
   padding-left: 260px;
   padding-right: 260px;
   background-image: url("/img/bg/home_first-block bg.png");
+  background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -56,6 +57,35 @@
   .container__banner {
     padding-left: 100px;
     padding-right: 100px;
+    height: 925px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 100%;
+    height: auto;
+    padding: 70px;
+    align-items: center;
+    background-image: url("/img/bg/home_first-block bg.png");
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .container__banner .container__banner__info .container__banner__main {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    align-items: flex-start;
+  }
+  .container__banner .container__banner__info .container__banner__main .title__small-up_uppercase {
+    font-size: 10px;
+  }
+  .container__banner .container__banner__info .container__banner__main .title__h2 {
+    font-size: 40px;
+  }
+  .container__banner .container__banner__info .container__banner__main .title__small-down {
+    display: flex;
+    font-size: 12px;
+    max-width: 250px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -68,7 +98,6 @@
     padding: 70px;
     background-image: none;
     align-items: center;
-    gap: 90px;
   }
   .container__banner .container__banner__info .container__banner__main {
     display: flex;
@@ -148,10 +177,11 @@
 }
 .container__banner .container__banner__info {
   display: flex;
-  width: 510px;
-  flex-direction: column;
-  align-items: flex-start;
+  width: 430px;
+  flex-direction: row;
+  align-items: center;
   gap: 7px;
+  justify-content: center;
 }
 .container__banner .container__banner__main .title__small-up_uppercase {
   text-transform: uppercase;
@@ -211,9 +241,41 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .container__banner .container__banner__image {
+    padding: 0%;
+  }
   .container__banner .container__banner__image #photo-girl {
     display: flex;
     max-width: 300px;
     height: auto;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1449px) {
+  .container__banner {
+    display: flex;
+    max-width: auto;
+    height: auto;
+    padding-right: 15%;
+  }
+  .container__banner #photo-girl {
+    display: flex;
+    max-width: 300px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+  .container__banner #photo-girl {
+    display: flex;
+    max-width: 350px;
+    height: auto;
+    padding-right: 15%;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+  .container__banner #photo-girl {
+    display: flex;
+    max-width: 300px;
+    height: auto;
+    padding-right: 5%;
   }
 }/*# sourceMappingURL=home_first-block.css.map */
