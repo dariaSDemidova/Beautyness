@@ -34,7 +34,7 @@ body {
 @media screen and (min-width: 992px) and (max-width: 1449px) {
   .top__line {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: 15px;
