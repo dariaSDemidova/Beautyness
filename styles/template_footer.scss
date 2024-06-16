@@ -8,12 +8,13 @@
 }
 
 .footer {
-    display: flex;
     justify-content: center;
     max-height: 635px;
     background-color: #1E2C30;
     color: #FFFFFF;
-    padding-top: 66px;
+    padding: 50px 0px;
+    max-width: 1920px;
+    margin: 0 auto;
 
     @media (max-width: 480px) {
         padding-top: 11px;
@@ -82,18 +83,21 @@
         margin-top: 30px;
         display: flex;
         justify-content: center;
+        gap: 8px;
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
         margin-top: 30px;
         display: flex;
         justify-content: center;
+        gap: 8px;
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
         margin-top: 30px;
         display: flex;
         justify-content: center;
+        gap: 8px;
     }
 }
 
@@ -104,9 +108,11 @@ hr {
 
 .container__menu {
     display: flex;
-    gap: 129px;
+    gap: 10px;
     padding-top: 52px;
     max-width: 1200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
     @media (max-width: 480px) {
         flex-direction: column;
@@ -125,8 +131,8 @@ hr {
         gap: 50px;
     }
     @media (min-width: 992px) and (max-width: 1449px) {
-        gap: 95px;
-        margin-bottom: 60px;
+        gap: 5px;
+        padding-bottom: 60px;
     }
 }
 
@@ -171,11 +177,16 @@ hr {
 
 .shedule {
     @include text-styles ($mainFont, 17px, 500, 34px, -1%);
+    min-width: 171px;
 }
 
 .contacts__container {
     display: flex;
-    gap: 29px;
+    gap: 5px;
+    min-width: 437px;
+    @media (max-width: 500px) {
+        min-width: auto;
+    }
 }
 
 .copyright {
@@ -184,4 +195,6 @@ hr {
     background-color: #111E22;
     @include text-styles ($mainFont, 15px, 400, 30px, -1%);
     color: #FFFFFF;
+    max-width: 1920px;
+    margin: 0 auto;
 }

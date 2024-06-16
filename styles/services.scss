@@ -9,6 +9,7 @@
 
 .services {
     max-width: 1920px;
+    margin: 50px 0px;
 
     @media (max-width: 480px) {
         max-width: 480px;
@@ -17,110 +18,108 @@
     @media (min-width: 768px) and (max-width: 991px) {
         max-width: 991px;
     }
-}
 
-.services__subtitle {
-    @extend %title_sm-top;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 146px;
-}
-
-.services__title {
-    @extend %title_h2;
-    text-align: center;
-    padding-top: 9px;
-}
-
-.services__container1,
-.services__container2,
-.services__container3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    @media (max-width: 480px) {
-        grid-template-columns: 1fr;
+    &__subtitle {
+        @extend %title_sm-top;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 146px;
+    }
+    
+    &__title {
+        @extend %title_h2;
+        text-align: center;
+        padding-top: 9px;
     }
 
-    @media (min-width: 481px) and (max-width: 767px) {
-        grid-template-columns: 1fr;
-    }
-}
+    &__container1,
+    &__container2,
+    &__container3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-items: center;
 
-.services__container1,
-.services__container2 {
-    background-image: url('/img/services_background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
 
-    @media (max-width: 480px) {
-        background-image: none;
-    }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        background-image: none;
-    }
-
-    @media (min-width: 768px) and (max-width: 991px) {
-        background-image: none;
-    }
-}
-
-.services__container1 {
-    padding-top: 50px;
-}
-
-.services__container3 {
-    background-image: url('/img/services_background2.jpg');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    margin-bottom: 131px;
-
-    @media (max-width: 480px) {
-        background-image: none;
+        @media (min-width: 481px) and (max-width: 767px) {
+            grid-template-columns: 1fr;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
-    @media (min-width: 481px) and (max-width: 767px) {
-        background-image: none;
+    &__container1 {
+        padding-top: 50px;
     }
 
-    @media (min-width: 768px) and (max-width: 991px) {
-        background-image: none;
+    &__container3 {
+        margin-bottom: 131px;
+    }
+
+    &__img {
+        max-width: 530px;
+    
+        @media (max-width: 480px) {
+            max-width: 300px;
+        }
+    
+        @media (min-width: 481px) and (max-width: 767px) {
+            max-width: 380px;
+        }
+    
+        @media (min-width: 768px) and (max-width: 991px) {
+            max-width: 530px;
+        }
+    
+        @media (min-width: 992px) and (max-width: 1221px) {
+            margin: 0 auto;
+            max-width: 444px;
+        }
     }
 }
 
-
-.services__img {
-    @media (max-width: 480px) {
-        max-width: 300px;
+.service {
+    &__name {
+        @include text-styles ($secondaryFont, 22px, 400, 28.6px, 5%);
+        color: #141414;
     }
 
-    @media (min-width: 481px) and (max-width: 767px) {
-        max-width: 380px;
+    &__price,
+    &__text {
+        @include text-styles ($mainFont, 18px, 400, 29.7px, 2%);
+        color: #555555;
     }
 
-    @media (min-width: 768px) and (max-width: 991px) {
-        max-width: 380px;
+    &-container {
+        display: flex;
     }
-}
 
-
-.service__name {
-    @include text-styles ($secondaryFont, 22px, 400, 28.6px, 5%);
-    color: #141414;
-
-}
-
-.service__price,
-.service__text {
-    @include text-styles ($mainFont, 18px, 400, 29.7px, 2%);
-    color: #555555;
-}
-
-
-
-.service-container {
-    display: flex;
+    &__button {
+        @include btn(#FFFFFF, 23px 34px);
+        color: $btnTextDark;
+        text-transform: uppercase;
+        letter-spacing: 12%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 65px;
+        width: 249px;
+        border: 2px solid;
+        border-color: #5C8692;
+        margin-top: 35px;
+    
+        @media  (max-width: 991px) {
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+    }
 }
 
 hr {
@@ -130,26 +129,6 @@ hr {
 }
 
 
-.service__button {
-    @include btn(#FFFFFF, 23px 34px);
-    color: $btnTextDark;
-    text-transform: uppercase;
-    letter-spacing: 12%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65px;
-    width: 249px;
-    border: 2px solid;
-    border-color: #5C8692;
-    margin-top: 35px;
-
-    @media (max-width: 480px) {
-        margin-bottom: 20px;
-    }
-
-}
-
 .discount {
     max-width: 1920px;
     max-height: 670px;
@@ -158,72 +137,100 @@ hr {
     @media (max-width: 480px) {
         max-height: 1000px;
     }
-}
 
-.discount__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.discount__subtitle {
-    @extend %title_sm-top;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 131px;
-}
-
-.discount__title {
-    @extend %title_h2;
-    text-align: center;
-    padding-top: 9px;
-    max-width: 626px;
-}
-
-.discount__text {
-    @extend %title__sm-down;
-    text-align: center;
-    padding-top: 14px;
-    max-width: 644px;
-}
-
-.discount__main {
-    display: flex;
-    justify-content: center;
-    border: 1px solid #95BFCB;
-    margin-top: 37px;
-    margin-bottom: 131px;
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    &__subtitle {
+        @extend %title_sm-top;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 131px;
+    }
+    
+    &__title {
+        @extend %title_h2;
+        text-align: center;
+        padding-top: 9px;
+        max-width: 626px;
+    }
+    
+    &__text {
+        @extend %title__sm-down;
+        text-align: center;
+        padding-top: 14px;
+        max-width: 644px;
+    }
+    
+    &__main {
+        display: flex;
+        border: 1px solid #95BFCB;
+        margin-top: 37px;
+        margin-bottom: 130px;
+    
+        @media (max-width: 480px) {
+            flex-direction: column;
+        }
+    }
 }
 
 .offer {
     background-color: #FFFFFF;
     display: grid;
     grid-template-columns: 1fr 2fr;
-}
+    width: 288px;
+    height: 145px;
 
-.offer__contacts {
-    @include text-styles ($mainFont, 15px, 500, 22.5px, 0%);
-    color: #141414;
-}
-
-.offer__data {
-    @include text-styles ($mainFont, 14px, 800, 21px, 8%);
-    color: #141414;
+    &__img {
+        margin-top: 25px;
+        margin-left: 40px;
+    }
+    
+    &__text {
+        margin-top: 18px;
+    }
+    
+    &__contacts {
+        @include text-styles ($mainFont, 15px, 500, 22.5px, 0%);
+        color: #141414;
+    }
+    
+    &__data {
+        @include text-styles ($mainFont, 14px, 800, 21px, 8%);
+        color: #141414;
+    }
 }
 
 .flat {
     background-color: #1E2C30;
-}
+    width: 167px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
-.flat__title {
-    @include text-styles ($mainFont, 15px, 800, 26.25px, 10%);
-    text-align: center;
-    color: #FFFFFF;
-}
+    @media (max-width: 480px) {
+        width: 288px;
+    }
 
-.flat__subtitle {
-    @include text-styles ($mainFont, 18px, 800, 31.5px, 2%);
-    text-align: center;
-    color: #FFFFFF;
+    &__title {
+        @include text-styles ($mainFont, 15px, 800, 26.25px, 10%);
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    
+    &__subtitle {
+        @include text-styles ($mainFont, 18px, 800, 31.5px, 2%);
+        text-align: center;
+        color: #FFFFFF;
+    }
+    
+    img {
+        max-width: 97px;
+        margin: 0 auto;
+    }
 }

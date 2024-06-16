@@ -364,32 +364,28 @@ body {
   .team .card-image {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .team .card-image {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 992px) and (max-width: 1449px) {
   .team .card-image {
     width: 312px;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 1450px) and (max-width: 1920px) {
   .team .card-image {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -615,7 +611,6 @@ body {
   .opinion__dark-box .dark-box__content {
     flex-direction: column-reverse;
     align-items: flex-end;
-    max-height: -moz-max-content;
     max-height: max-content;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -627,7 +622,6 @@ body {
   .opinion__dark-box .dark-box__content {
     flex-direction: column-reverse;
     align-items: flex-end;
-    max-height: -moz-max-content;
     max-height: max-content;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -858,8 +852,7 @@ body {
     grid-auto-rows: minmax 200px, auto;
     grid-template-areas: "title pic1" "pic2 pic2" "pic3 pic3";
     row-gap: 20px;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
+    column-gap: 20px;
   }
 }
 @media (min-width: 992px) and (max-width: 1449px) {
@@ -886,8 +879,7 @@ body {
 .follow__img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .pic-box1 {
@@ -1017,7 +1009,6 @@ body {
 }
 @media (max-width: 480px) {
   .follow__btn .btn_green_uppercase {
-    min-width: -moz-max-content;
     min-width: max-content;
   }
 }

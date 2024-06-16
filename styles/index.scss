@@ -30,10 +30,11 @@ body {
     padding-left: 360px;
     padding-right: 360px;
 
-    background-image: url("/img/bg/home_first-block\ bg.png");
+    background-image: url("../img/bg/home_first-block\ bg.png");
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: right;
+    max-width: 1920px;
 
     @media screen and (min-width: 992px) and (max-width: 1449px) {
         display: flex;
@@ -46,7 +47,7 @@ body {
         padding-left: 100px;
         padding-right: 100px;
 
-        background-image: url("/img/bg/home_first-block\ bg.png");
+        background-image: url("../img/bg/home_first-block\ bg.png");
         background-size: 50% 100%;
 
         background-repeat: no-repeat;
@@ -184,12 +185,11 @@ body {
         }
 
         .title__small-down {
-            @extend %title__sm-down; //стиль для нижнего текста
+            @extend %title__sm-down; 
             font-size: 19px;
             font-style: normal;
             font-weight: 400;
             line-height: 170%;
-            /* 32.3px */
             display: flex;
             width: 508px;
             height: 62px;
@@ -212,7 +212,6 @@ body {
         display: flex;
         max-width: auto;
         height: auto;
-        padding-right: 25%;
 
         @media screen and (max-width: 480px) {
             display: none;
@@ -241,7 +240,7 @@ body {
 
         #photo-girl {
             display: flex;
-            max-width: 350px;
+            max-width: 335px;
             height: auto;
 
         }
@@ -259,7 +258,7 @@ body {
     @media screen and (min-width: 1201px) and (max-width: 1300px) {
         #photo-girl {
             display: flex;
-            max-width: 300px;
+            max-width: 387px;
             height: auto;
             padding-right: 5%;
         }
@@ -276,6 +275,15 @@ body {
     margin: 0px auto;
     max-width: 1920px;
     gap: 105px;
+    @media screen and (min-width: 992px) and (max-width: 1449px) {
+        gap: 63px; 
+    }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+        gap:8px
+        }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+        gap:8px
+        }
 }
 
 .home-second-block_card-image {
@@ -394,8 +402,6 @@ body {
     gap: 10px;
     flex-shrink: 0;
 }
-
-.card__icon {}
 
 .card .card_text {
     display: flex;
@@ -687,6 +693,7 @@ body {
 
 .services {
     max-width: 1920px;
+    margin: 50px 0px;
 
     @media (max-width: 480px) {
         max-width: 480px;
@@ -713,6 +720,9 @@ body {
 .services__container1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
 
     @media (max-width: 480px) {
         grid-template-columns: 1fr;
@@ -720,29 +730,37 @@ body {
 
     @media (min-width: 481px) and (max-width: 767px) {
         grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 .services__container1 {
     padding-top: 50px;
-    background-image: url('/img/services_background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-image: url('../img/services_background.jpg');
+    // background-position: center;
+    // background-repeat: no-repeat;
 
-    @media (max-width: 480px) {
-        background-image: none;
-    }
+    // @media (max-width: 480px) {
+    //     background-image: none;
+    // }
 
-    @media (min-width: 481px) and (max-width: 767px) {
-        background-image: none;
-    }
+    // @media (min-width: 481px) and (max-width: 767px) {
+    //     background-image: none;
+    // }
 
-    @media (min-width: 768px) and (max-width: 991px) {
-        background-image: none;
-    }
+    // @media (min-width: 768px) and (max-width: 991px) {
+    //     background-image: none;
+    // }
 }
 
 .services__img {
+    max-width: 530px;
+
     @media (max-width: 480px) {
         max-width: 300px;
     }
@@ -752,7 +770,12 @@ body {
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
-        max-width: 380px;
+        max-width: 530px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1221px) {
+        margin: 0 auto;
+        max-width: 444px;
     }
 }
 
@@ -796,10 +819,10 @@ hr {
     border-color: #5C8692;
     margin-top: 35px;
 
-    @media (max-width: 480px) {
-        margin-bottom: 20px;
+    @media  (max-width: 991px) {
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
-
 }
 
 //Тут заканчиваются стили для контейнера с услугами и ценами (внесла Даша)
@@ -1157,6 +1180,7 @@ hr {
 
 .flat-discount__container {
     display: flex;
+    justify-content: space-between;
 
     @media (min-width: 768px) and (max-width: 991px) {
         flex-direction: column;
@@ -1171,44 +1195,64 @@ hr {
     }
 }
 
-
 .discount__container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 544px;  
+    margin: 0 auto;
 }
 
 .discount__subtitle {
     @extend %title_sm-top;
-    text-align: center;
     text-transform: uppercase;
     padding-top: 218px;
 }
 
 .discount__title {
     @extend %title_h2;
-    text-align: center;
     padding-top: 9px;
+
+    @media (max-width: 991px) {
+        text-align: center;
+    }
 }
 
 .discount__text {
     @extend %title__sm-down;
-    text-align: center;
     padding-top: 14px;
+
+    @media (max-width: 991px) {
+        text-align: center;
+    }
 }
 
 .discount__main {
     display: flex;
-    justify-content: center;
     border: 1px solid #95BFCB;
     margin-top: 37px;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
 }
 
 .offer {
     background-color: #FFFFFF;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    width: 288px;
+    height: 145px;
+}
+
+.offer__img {
+    margin-top: 25px;
+    margin-left: 40px;
+}
+
+.offer__text {
+    margin-top: 18px;
 }
 
 .offer__contacts {
@@ -1223,18 +1267,32 @@ hr {
 
 .flat {
     background-color: #1E2C30;
+    width: 167px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    @media (max-width: 480px) {
+        width: 288px;
+    }
 }
 
 .flat__title {
     @include text-styles ($mainFont, 15px, 800, 26.25px, 10%);
     text-align: center;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 .flat__subtitle {
     @include text-styles ($mainFont, 18px, 800, 31.5px, 2%);
     text-align: center;
     color: #FFFFFF;
+}
+
+.flat img {
+    max-width: 97px;
+    margin: 0 auto;
 }
 
 
@@ -1249,8 +1307,6 @@ hr {
     margin-top: 132px;
     margin-bottom: 131px;
     box-shadow: 0px 34px 50px 0px #442E1A12;
-
-
 
     @media (min-width: 481px) and (max-width: 767px) {
         padding: 20px 25px;

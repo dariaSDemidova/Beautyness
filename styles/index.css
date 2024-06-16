@@ -54,10 +54,11 @@ body {
   margin: 0 auto;
   padding-left: 360px;
   padding-right: 360px;
-  background-image: url("/img/bg/home_first-block bg.png");
+  background-image: url("../img/bg/home_first-block bg.png");
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: right;
+  max-width: 1920px;
 }
 @media screen and (min-width: 992px) and (max-width: 1449px) {
   .container__banner {
@@ -70,7 +71,7 @@ body {
     align-items: center;
     padding-left: 100px;
     padding-right: 100px;
-    background-image: url("/img/bg/home_first-block bg.png");
+    background-image: url("../img/bg/home_first-block bg.png");
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -189,7 +190,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 170%;
-  /* 32.3px */
   display: flex;
   width: 508px;
   height: 62px;
@@ -217,7 +217,6 @@ body {
   display: flex;
   max-width: auto;
   height: auto;
-  padding-right: 25%;
 }
 @media screen and (max-width: 480px) {
   .container__banner .container__banner__image {
@@ -247,7 +246,7 @@ body {
   }
   .container__banner #photo-girl {
     display: flex;
-    max-width: 350px;
+    max-width: 335px;
     height: auto;
   }
 }
@@ -262,7 +261,7 @@ body {
 @media screen and (min-width: 1201px) and (max-width: 1300px) {
   .container__banner #photo-girl {
     display: flex;
-    max-width: 300px;
+    max-width: 387px;
     height: auto;
     padding-right: 5%;
   }
@@ -276,6 +275,21 @@ body {
   margin: 0px auto;
   max-width: 1920px;
   gap: 105px;
+}
+@media screen and (min-width: 992px) and (max-width: 1449px) {
+  .home-second-block__container {
+    gap: 63px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .home-second-block__container {
+    gap: 8px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .home-second-block__container {
+    gap: 8px;
+  }
 }
 
 .home-second-block_card-image {
@@ -713,6 +727,7 @@ body {
 /* конец стилей последнего блока (Саша) */
 .services {
   max-width: 1920px;
+  margin: 50px 0px;
 }
 @media (max-width: 480px) {
   .services {
@@ -739,6 +754,9 @@ body {
 .services__container1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
 }
 @media (max-width: 480px) {
   .services__container1 {
@@ -748,31 +766,23 @@ body {
 @media (min-width: 481px) and (max-width: 767px) {
   .services__container1 {
     grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .services__container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .services__container1 {
   padding-top: 50px;
-  background-image: url("/img/services_background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-@media (max-width: 480px) {
-  .services__container1 {
-    background-image: none;
-  }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .services__container1 {
-    background-image: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .services__container1 {
-    background-image: none;
-  }
 }
 
+.services__img {
+  max-width: 530px;
+}
 @media (max-width: 480px) {
   .services__img {
     max-width: 300px;
@@ -785,7 +795,13 @@ body {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .services__img {
-    max-width: 380px;
+    max-width: 530px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1221px) {
+  .services__img {
+    margin: 0 auto;
+    max-width: 444px;
   }
 }
 
@@ -841,9 +857,10 @@ hr {
   border-color: #5C8692;
   margin-top: 35px;
 }
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .service__button {
-    margin-bottom: 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 
@@ -1017,7 +1034,6 @@ hr {
   .opinion__dark-box .dark-box__content {
     flex-direction: column-reverse;
     align-items: flex-end;
-    max-height: -moz-max-content;
     max-height: max-content;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -1029,7 +1045,6 @@ hr {
   .opinion__dark-box .dark-box__content {
     flex-direction: column-reverse;
     align-items: flex-end;
-    max-height: -moz-max-content;
     max-height: max-content;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -1212,6 +1227,7 @@ hr {
 
 .flat-discount__container {
   display: flex;
+  justify-content: space-between;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .flat-discount__container {
@@ -1234,35 +1250,59 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 544px;
+  margin: 0 auto;
 }
 
 .discount__subtitle {
-  text-align: center;
   text-transform: uppercase;
   padding-top: 218px;
 }
 
 .discount__title {
-  text-align: center;
   padding-top: 9px;
+}
+@media (max-width: 991px) {
+  .discount__title {
+    text-align: center;
+  }
 }
 
 .discount__text {
-  text-align: center;
   padding-top: 14px;
+}
+@media (max-width: 991px) {
+  .discount__text {
+    text-align: center;
+  }
 }
 
 .discount__main {
   display: flex;
-  justify-content: center;
   border: 1px solid #95BFCB;
   margin-top: 37px;
+}
+@media (max-width: 480px) {
+  .discount__main {
+    flex-direction: column;
+  }
 }
 
 .offer {
   background-color: #FFFFFF;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  width: 288px;
+  height: 145px;
+}
+
+.offer__img {
+  margin-top: 25px;
+  margin-left: 40px;
+}
+
+.offer__text {
+  margin-top: 18px;
 }
 
 .offer__contacts {
@@ -1285,6 +1325,15 @@ hr {
 
 .flat {
   background-color: #1E2C30;
+  width: 167px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 480px) {
+  .flat {
+    width: 288px;
+  }
 }
 
 .flat__title {
@@ -1295,6 +1344,7 @@ hr {
   letter-spacing: 10%;
   text-align: center;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .flat__subtitle {
@@ -1305,6 +1355,11 @@ hr {
   letter-spacing: 2%;
   text-align: center;
   color: #FFFFFF;
+}
+
+.flat img {
+  max-width: 97px;
+  margin: 0 auto;
 }
 
 .appointment__container {
