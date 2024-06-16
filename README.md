@@ -8,17 +8,17 @@ About the project
 **Beautyness** is a web project designed to showcase a beauty salon's offerings in a visually appealing and highly functional manner. This project aims to provide:
 
 
-*Responsive Design: Ensuring the website looks great on all devices, from desktops to smartphones. 
+* Responsive Design: Ensuring the website looks great on all devices, from desktops to smartphones. 
 
-*User-Friendly Interface: Making it easy for visitors to navigate and find the information they need. 
+* User-Friendly Interface: Making it easy for visitors to navigate and find the information they need. 
 
-*Essential Information: Offering details about the salon, including services provided, pricing, and staff information. 
+* Essential Information: Offering details about the salon, including services provided, pricing, and staff information. 
 
-*Contact Details: Providing multiple ways for customers to get in touch, including a contact form, phone number, and address. 
+* Contact Details: Providing multiple ways for customers to get in touch, including a contact form, phone number, and address. 
 
-*Modern Aesthetics: Utilizing contemporary design principles to create an inviting and professional online presence. 
+* Modern Aesthetics: Utilizing contemporary design principles to create an inviting and professional online presence. 
 
-*This project is built using modern web development technologies to ensure optimal performance and a seamless user experience. 
+* This project is built using modern web development technologies to ensure optimal performance and a seamless user experience. 
 
 
 View our Website
@@ -43,11 +43,11 @@ Open the index.html file in your preferred web browser to view the homepage. Nav
 
 Used technologies
 ---
-  * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-  * ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
-  * ![BEM](https://img.shields.io/badge/bem-000.svg?style=for-the-badge&logo=bem&logoColor=#000)
-  * ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-  * ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)
+![BEM](https://img.shields.io/badge/bem-000.svg?style=for-the-badge&logo=bem&logoColor=#000)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 Our Team
 ---
